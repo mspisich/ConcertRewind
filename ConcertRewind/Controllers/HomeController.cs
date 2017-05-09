@@ -45,17 +45,21 @@ namespace ConcertRewind.Controllers
             List<string> songsPlayed = new List<string>();
 
             //Check through each set from concert
-            foreach (var setIndex in setlist["setlists"]["setlist"][0]["sets"]["set"])
+            for(int setIndex = 0; setIndex < setlist["setlists"]["setlist"][0]["sets"]["set"].Count(); setIndex++)
             {
                 //Check through each song from set
-                foreach (var songIndex in setlist["setlists"]["setlist"][0]["sets"]["set"][setIndex]["song"])
+                for (int songIndex = 0; songIndex < setlist["setlists"]["setlist"][0]["sets"]["set"][setIndex]["song"].Count(); songIndex++)
                 {
                     //Add song to list
                     songsPlayed.Add((setlist["setlists"]["setlist"][0]["sets"]["set"][setIndex]["song"][songIndex]["@name"]).ToString());
                 }
             }
 
-            ViewBag.Text = songsPlayed;
+            foreach(string song in songsPlayed)
+            {
+                ViewBag.Text += song;
+            }
+            
 
             //Go to results view
             return View("Index");
