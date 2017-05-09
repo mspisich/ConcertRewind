@@ -15,7 +15,7 @@ namespace ConcertRewind.Controllers
         {
             ViewBag.Title = "Home Page";
 
-            return GetSetList("bruce%20springsteen");
+            return View();
         }
 
         public ActionResult GetSetList(string artistName)
