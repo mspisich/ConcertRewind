@@ -41,6 +41,9 @@ namespace ConcertRewind.Controllers
             //Converts that text into JSON
             JObject setlist = JObject.Parse(ApiText);
 
+            //Get date and location of previous concert
+            string date = setlist["setlists"]["setlist"][0]["@eventDate"].ToString();
+            string location = setlist["setlists"]["setlist"][0]["venue"]["city"]["@name"].ToString() + ", " + setlist["setlists"]["setlist"][0]["venue"]["city"]["@state"].ToString();
 
             List<string> songsPlayed = new List<string>();
 
