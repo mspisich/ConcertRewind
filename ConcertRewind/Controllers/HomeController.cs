@@ -67,15 +67,36 @@ namespace ConcertRewind.Controllers
             List<string> songsPlayed = new List<string>();
 
             //Check through each set from concert
-            for(int setIndex = 0; setIndex < setlist["setlists"]["setlist"][0]["sets"]["set"].Count(); setIndex++)
+            int totalSets = setlist["setlists"]["setlist"][0]["sets"]["set"].Count();
+
+            //Case of no songs
+            if (totalSets <= 0)
             {
-                //Check through each song from set
-                for (int songIndex = 0; songIndex < setlist["setlists"]["setlist"][0]["sets"]["set"][setIndex]["song"].Count(); songIndex++)
+                //***********Add exception here!************
+            }
+            //Case of only one set at concert
+            else if (totalSets == 1)
+            {
+                for (int songIndex = 0; songIndex < setlist["setlists"]["setlist"][0]["sets"]["set"]["song"].Count(); songIndex++)
                 {
                     //Add song to list
-                    songsPlayed.Add((setlist["setlists"]["setlist"][0]["sets"]["set"][setIndex]["song"][songIndex]["@name"]).ToString());
+                    songsPlayed.Add((setlist["setlists"]["setlist"][0]["sets"]["set"]["song"][songIndex]["@name"]).ToString());
                 }
             }
+            //Case of multiple sets at concert
+            else
+            {
+                for (int setIndex = 0; setIndex < setlist["setlists"]["setlist"][0]["sets"]["set"].Count(); setIndex++)
+                {
+                    //Check through each song from set
+                    for (int songIndex = 0; songIndex < setlist["setlists"]["setlist"][0]["sets"]["set"][setIndex]["song"].Count(); songIndex++)
+                    {
+                        //Add song to list
+                        songsPlayed.Add((setlist["setlists"]["setlist"][0]["sets"]["set"][setIndex]["song"][songIndex]["@name"]).ToString());
+                    }
+                }
+            }
+            
 
             concert concert = new Models.concert(artist, date, location, songsPlayed);
             
