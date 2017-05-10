@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using ConcertRewind.Models;
 
 namespace ConcertRewind.Controllers
 {
@@ -18,12 +19,29 @@ namespace ConcertRewind.Controllers
             return View();
         }
 
-        public ActionResult GetSetList(string artistName)
+        public ActionResult Results(string artistName)
+        {
+            //Get concert info from setlist API
+            concert c = GetSetList(artistName);
+
+            ViewBag.artist = c.artist;
+            ViewBag.date = c.date;
+            ViewBag.location = c.location;
+
+            foreach (string song in c.songsPlayed)
+            {
+                ViewBag.songsPlayed += "<li>" + song + "</li>";
+            }
+
+            return View();
+        }
+
+        public static concert GetSetList(string artistName)
         {
 
             HttpWebRequest request =
 
-            //Load setlist json for chosen artist
+            //Load setlist json for chosen artist from setlist.fm API
             WebRequest.CreateHttp("http://api.setlist.fm/rest/0.1/search/setlists.json?artistName=" + artistName);
 
             //Tells the user what browsers we're using
@@ -59,17 +77,10 @@ namespace ConcertRewind.Controllers
                 }
             }
 
-            ViewBag.artist = artist;
-            ViewBag.date = date;
-            ViewBag.location = location;
-
-            foreach(string song in songsPlayed)
-            {
-                ViewBag.songsPlayed += "<li>" + song + "</li>";
-            }
+            concert concert = new Models.concert(artist, date, location, songsPlayed);
             
             //Go to results view
-            return View("Results");
+            return concert;
         }
     }
 }
