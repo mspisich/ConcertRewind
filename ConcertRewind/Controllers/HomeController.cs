@@ -62,12 +62,16 @@ namespace ConcertRewind.Controllers
             //Get date and location of previous concert
             string artist = setlist["setlists"]["setlist"][0]["artist"]["@name"].ToString();
             string date = setlist["setlists"]["setlist"][0]["@eventDate"].ToString();
-            string location = setlist["setlists"]["setlist"][0]["venue"]["city"]["@name"].ToString() + ", " + setlist["setlists"]["setlist"][0]["venue"]["city"]["@state"].ToString();
+
+
+            string location = setlist["setlists"]["setlist"][0]["venue"]["city"]["@name"].ToString();
+            //string location = setlist["setlists"]["setlist"][0]["venue"]["city"]["@name"].ToString() + ", " + setlist["setlists"]["setlist"][0]["venue"]["city"]["@state"].ToString();
 
             List<string> songsPlayed = new List<string>();
 
-            //Check through each set from concert
             int totalSets = setlist["setlists"]["setlist"][0]["sets"]["set"].Count();
+
+            //Check through each set from concert
 
             //Case of no songs
             if (totalSets <= 0)
