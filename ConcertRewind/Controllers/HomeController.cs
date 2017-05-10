@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using ConcertRewind.Models;
 
 namespace ConcertRewind.Controllers
 {
@@ -18,12 +19,29 @@ namespace ConcertRewind.Controllers
             return View();
         }
 
-        public ActionResult GetSetList(string artistName)
+        public ActionResult Results(string artistName)
+        {
+            //Get concert info from setlist API
+            concert c = GetSetList(artistName);
+
+            ViewBag.artist = c.artist;
+            ViewBag.date = c.date;
+            ViewBag.location = c.location;
+
+            foreach (string song in c.songsPlayed)
+            {
+                ViewBag.songsPlayed += "<li>" + song + "</li>";
+            }
+
+            return View();
+        }
+
+        public static concert GetSetList(string artistName)
         {
 
             HttpWebRequest request =
 
-            //Load setlist json for chosen artist
+            //Load setlist json for chosen artist from setlist.fm API
             WebRequest.CreateHttp("http://api.setlist.fm/rest/0.1/search/setlists.json?artistName=" + artistName);
 
             //Tells the user what browsers we're using
@@ -42,6 +60,7 @@ namespace ConcertRewind.Controllers
             JObject setlist = JObject.Parse(ApiText);
 
             //Get date and location of previous concert
+            string artist = setlist["setlists"]["setlist"][0]["artist"]["@name"].ToString();
             string date = setlist["setlists"]["setlist"][0]["@eventDate"].ToString();
             string location = setlist["setlists"]["setlist"][0]["venue"]["city"]["@name"].ToString() + ", " + setlist["setlists"]["setlist"][0]["venue"]["city"]["@state"].ToString();
 
@@ -58,14 +77,10 @@ namespace ConcertRewind.Controllers
                 }
             }
 
-            foreach(string song in songsPlayed)
-            {
-                ViewBag.Text += song;
-            }
+            concert concert = new Models.concert(artist, date, location, songsPlayed);
             
-
             //Go to results view
-            return View("Index");
+            return concert;
         }
     }
 }
