@@ -42,6 +42,7 @@ namespace ConcertRewind.Controllers
             JObject setlist = JObject.Parse(ApiText);
 
             //Get date and location of previous concert
+            string artist = setlist["setlists"]["setlist"][0]["artist"]["@name"].ToString();
             string date = setlist["setlists"]["setlist"][0]["@eventDate"].ToString();
             string location = setlist["setlists"]["setlist"][0]["venue"]["city"]["@name"].ToString() + ", " + setlist["setlists"]["setlist"][0]["venue"]["city"]["@state"].ToString();
 
@@ -58,14 +59,17 @@ namespace ConcertRewind.Controllers
                 }
             }
 
+            ViewBag.artist = artist;
+            ViewBag.date = date;
+            ViewBag.location = location;
+
             foreach(string song in songsPlayed)
             {
-                ViewBag.Text += song;
+                ViewBag.songsPlayed += "<li>" + song + "</li>";
             }
             
-
             //Go to results view
-            return View("Index");
+            return View("Results");
         }
     }
 }
