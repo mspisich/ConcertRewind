@@ -256,6 +256,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Setlist\Results.cshtml" />
+    <Content Include="Views\Setlist\Concert.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
