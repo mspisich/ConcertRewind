@@ -14,12 +14,30 @@ namespace ConcertRewind.Controllers
     {
         public ActionResult Results(string artistName)
         {
-            //Get concert info from setlist API
-            concert c = GetSetList(artistName);
+            //Generate artist object
+            artist artist = new Models.artist(artistName);
 
+            //Get list of concert objects
+            List<concert> recentConcerts = GetConcerts(artist);
+
+            foreach (concert concert in recentConcerts)
+            {
+                string concertInfo = concert.city + ", " + concert.state + ": " + concert.date;
+                ViewBag.recentConcerts += "<li>" + concertInfo + "</li>";
+            }
+
+            return View();
+        }
+
+        
+
+        //Return Concert view
+        public ActionResult Concert(concert c)
+        {
             ViewBag.artist = c.artist;
             ViewBag.date = c.date;
-            ViewBag.location = c.location;
+            ViewBag.location = c.city + ", " + c.state;
+            ViewBag.tour = c.tour;
 
             foreach (string song in c.songsPlayed)
             {
@@ -29,40 +47,65 @@ namespace ConcertRewind.Controllers
             return View();
         }
 
-        public static concert GetSetList(string artistName)
+        //Get a list of recent concerts by an artist (up to 10)
+        public static List<concert> GetConcerts(artist a)
         {
+            //Get name and JObject for artist
+            string artistName = a.name;
+            JObject setlist = a.setlistApi;
 
-            HttpWebRequest request =
+            List<concert> recentConcerts = new List<concert>();
 
-            //Load setlist json for chosen artist from setlist.fm API
-            WebRequest.CreateHttp("http://api.setlist.fm/rest/0.1/search/setlists.json?artistName=" + artistName);
+            int totalConcerts = setlist["setlists"]["setlist"].Count();
 
-            //Tells the user what browsers we're using
-            request.UserAgent = @"User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36";
+            if(totalConcerts < 10)
+            {
+                for(int i = 0; i < totalConcerts; i++)
+                {
+                    recentConcerts.Add(GetSetList(a, i));
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    recentConcerts.Add(GetSetList(a, i));
+                }
+            }
 
-            //actually grabs the request
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            return recentConcerts;
+        }
 
-            //gets a stream of text
-            StreamReader rd = new StreamReader(response.GetResponseStream());
-
-            //reads to the end of file
-            string ApiText = rd.ReadToEnd();
-
-            //Converts that text into JSON
-            JObject setlist = JObject.Parse(ApiText);
+        //Generate concert object
+        public static concert GetSetList(artist a, int concertIndex)
+        {
+            //Get name and JObject for artist
+            string artistName = a.name;
+            JObject setlist = a.setlistApi;
 
             //Get date and location of previous concert
-            string artist = setlist["setlists"]["setlist"][0]["artist"]["@name"].ToString();
-            string date = setlist["setlists"]["setlist"][0]["@eventDate"].ToString();
+            string artist = setlist["setlists"]["setlist"][concertIndex]["artist"]["@name"].ToString();
+            string date = setlist["setlists"]["setlist"][concertIndex]["@eventDate"].ToString();
+            string city = setlist["setlists"]["setlist"][concertIndex]["venue"]["city"]["@name"].ToString();
+            string state = setlist["setlists"]["setlist"][concertIndex]["venue"]["city"]["country"]["@name"].ToString();
+            //string state = setlist["setlists"]["setlist"][concertIndex]["venue"]["city"]["@state"].ToString();
+            string venue = setlist["setlists"]["setlist"][concertIndex]["venue"]["@name"].ToString();
 
-
-            string location = setlist["setlists"]["setlist"][0]["venue"]["city"]["@name"].ToString();
-            //string location = setlist["setlists"]["setlist"][0]["venue"]["city"]["@name"].ToString() + ", " + setlist["setlists"]["setlist"][0]["venue"]["city"]["@state"].ToString();
-
+            string tour;
+            try
+            {
+                tour = setlist["setlists"]["setlist"][concertIndex]["@tour"].ToString();
+            }
+            catch (System.NullReferenceException)
+            {
+                Console.WriteLine("No tour info available for current song.");
+                tour = "n/a";
+            }
+            
+            
             List<string> songsPlayed = new List<string>();
 
-            int totalSets = setlist["setlists"]["setlist"][0]["sets"]["set"].Count();
+            int totalSets = setlist["setlists"]["setlist"][concertIndex]["sets"]["set"].Count();
 
             //Check through each set from concert
 
@@ -74,28 +117,28 @@ namespace ConcertRewind.Controllers
             //Case of only one set at concert
             else if (totalSets == 1)
             {
-                for (int songIndex = 0; songIndex < setlist["setlists"]["setlist"][0]["sets"]["set"]["song"].Count(); songIndex++)
+                //Check through each song from set
+                for (int songIndex = 0; songIndex < setlist["setlists"]["setlist"][concertIndex]["sets"]["set"]["song"].Count(); songIndex++)
                 {
                     //Add song to list
-                    songsPlayed.Add((setlist["setlists"]["setlist"][0]["sets"]["set"]["song"][songIndex]["@name"]).ToString());
+                    songsPlayed.Add((setlist["setlists"]["setlist"][concertIndex]["sets"]["set"]["song"][songIndex]["@name"]).ToString());
                 }
             }
             //Case of multiple sets at concert
             else
             {
-                for (int setIndex = 0; setIndex < setlist["setlists"]["setlist"][0]["sets"]["set"].Count(); setIndex++)
+                for (int setIndex = 0; setIndex < setlist["setlists"]["setlist"][concertIndex]["sets"]["set"].Count(); setIndex++)
                 {
                     //Check through each song from set
-                    for (int songIndex = 0; songIndex < setlist["setlists"]["setlist"][0]["sets"]["set"][setIndex]["song"].Count(); songIndex++)
+                    for (int songIndex = 0; songIndex < setlist["setlists"]["setlist"][concertIndex]["sets"]["set"][setIndex]["song"].Count(); songIndex++)
                     {
                         //Add song to list
-                        songsPlayed.Add((setlist["setlists"]["setlist"][0]["sets"]["set"][setIndex]["song"][songIndex]["@name"]).ToString());
+                        songsPlayed.Add((setlist["setlists"]["setlist"][concertIndex]["sets"]["set"][setIndex]["song"][songIndex]["@name"]).ToString());
                     }
                 }
             }
 
-
-            concert concert = new Models.concert(artist, date, location, songsPlayed);
+            concert concert = new Models.concert(artist, date, city, state, venue, tour, songsPlayed);
 
             //Go to results view
             return concert;

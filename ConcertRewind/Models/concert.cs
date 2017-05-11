@@ -10,15 +10,21 @@ namespace ConcertRewind.Models
         //Concert info
         public string artist;
         public string date;
-        public string location;
+        public string city;
+        public string state; //can be state or country
+        public string venue;
+        public string tour;
         public List<string> songsPlayed;
 
-        public concert(string a, string d, string l, List<string> s)
+        public concert(string a, string d, string c, string s, string v, string t, List<string> sp)
         {
             artist = a;
             date = d;
-            location = l;
-            songsPlayed = s;
+            city = c;
+            state = s;
+            venue = v;
+            tour = t;
+            songsPlayed = sp;
         }
     }
 }
