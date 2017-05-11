@@ -230,13 +230,16 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Views\Home\music1.jpg" />
-    <Content Include="Views\Home\music2.jpg" />
-    <Content Include="Views\Home\music3.jpg" />
-    <Content Include="Views\Home\music5.jpg" />
-    <Content Include="Views\Home\music6.jpg" />
-    <Content Include="Views\Home\music7.jpg" />
-    <Content Include="Views\Home\music8.jpg" />
+    <Content Include="Views\Home\01-band-red.jpg" />
+    <Content Include="Views\Home\02-crowd-yellow.jpg" />
+    <Content Include="Views\Home\03-jazz-singer-blue.jpg" />
+    <Content Include="Views\Home\04-crowd-phones-red.jpg" />
+    <Content Include="Views\Home\05-crowd-fireworks-blue.jpg" />
+    <Content Include="Views\Home\06-middle-age-crowd-tattoo.jpg" />
+    <Content Include="Views\Home\07-singer-microphone-color-bg.jpg" />
+    <Content Include="Views\Home\08-color-white-dancers-illustration.jpg" />
+    <Content Include="Views\Home\09-saxaphone-player-setting-sun.jpg" />
+    <Content Include="Views\Home\10-music-listeners-w-phone.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
