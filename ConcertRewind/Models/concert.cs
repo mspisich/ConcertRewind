@@ -15,8 +15,9 @@ namespace ConcertRewind.Models
         public string venue;
         public string tour;
         public List<string> songsPlayed;
+        public string id;
 
-        public concert(string a, string d, string c, string s, string v, string t, List<string> sp)
+        public concert(string a, string d, string c, string s, string v, string t, List<string> sp, string i)
         {
             artist = a;
             date = d;
@@ -25,6 +26,7 @@ namespace ConcertRewind.Models
             venue = v;
             tour = t;
             songsPlayed = sp;
+            id = i;
         }
     }
 }
