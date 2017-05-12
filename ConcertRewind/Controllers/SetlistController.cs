@@ -85,21 +85,57 @@ namespace ConcertRewind.Controllers
 
             //Get date and location of previous concert
             string artist = setlist["setlists"]["setlist"][concertIndex]["artist"]["@name"].ToString();
-            string date = setlist["setlists"]["setlist"][concertIndex]["@eventDate"].ToString();
-            string city = setlist["setlists"]["setlist"][concertIndex]["venue"]["city"]["@name"].ToString();
-            string state = setlist["setlists"]["setlist"][concertIndex]["venue"]["city"]["country"]["@name"].ToString();
-            //string state = setlist["setlists"]["setlist"][concertIndex]["venue"]["city"]["@state"].ToString();
-            string venue = setlist["setlists"]["setlist"][concertIndex]["venue"]["@name"].ToString();
 
-            string tour;
+            string date = "Date info not available.";
+            try
+            {
+                date = setlist["setlists"]["setlist"][concertIndex]["@eventDate"].ToString();
+            }
+            catch (System.NullReferenceException)
+            {
+                Console.WriteLine("No date info available for this concert.");
+            }
+
+            string city = "City info not available.";
+            try
+            {
+                city = setlist["setlists"]["setlist"][concertIndex]["venue"]["city"]["@name"].ToString();
+            }
+            catch (System.NullReferenceException)
+            {
+                Console.WriteLine("No city info available for this concert.");
+            }
+
+            string state = "State/country info not available.";
+            try
+            {
+                state = setlist["setlists"]["setlist"][concertIndex]["venue"]["city"]["country"]["@name"].ToString();
+            }
+            catch (System.NullReferenceException)
+            {
+                Console.WriteLine("No state/country info available for this concert.");
+            }
+
+            //string state = setlist["setlists"]["setlist"][concertIndex]["venue"]["city"]["@state"].ToString();
+
+            string venue = "Venue info not available.";
+            try
+            {
+                venue = setlist["setlists"]["setlist"][concertIndex]["venue"]["@name"].ToString();
+            }
+            catch (System.NullReferenceException)
+            {
+                Console.WriteLine("No venue info available for this concert.");
+            }
+
+            string tour = "n/a";
             try
             {
                 tour = setlist["setlists"]["setlist"][concertIndex]["@tour"].ToString();
             }
             catch (System.NullReferenceException)
             {
-                Console.WriteLine("No tour info available for current song.");
-                tour = "n/a";
+                Console.WriteLine("No tour info available for this concert.");
             }
             
             
