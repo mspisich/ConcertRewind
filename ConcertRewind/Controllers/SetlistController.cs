@@ -12,6 +12,13 @@ namespace ConcertRewind.Controllers
 {
     public class SetlistController : Controller
     {
+        public string Replace(string info)
+        {
+            string output = info.Replace(" ", "+");
+
+
+            return output;
+        }
         public ActionResult Results(string artistName)
         {
             //Generate artist object
@@ -23,7 +30,24 @@ namespace ConcertRewind.Controllers
             foreach (concert concert in recentConcerts)
             {
                 string concertInfo = concert.city + ", " + concert.state + ": " + concert.date;
-                ViewBag.recentConcerts += "<li>" + concertInfo + "</li>";
+                ViewBag.recentConcerts += "<li>" + concertInfo + " " + "<input type=\"button\" value=\"Go to Concert\" onclick=\"location.href = '<%: Url.Action(\"Concert\", \"Setlist\", new { parameter1 = \"concert\" }) %>\" />"</li>";
+
+                /*
+                 <input type="button" value="Go to Concert" onclick="location.href='<%: Url.Action("Concert", "Setlist", new { parameter1 = " + concert + " }) %>'" />
+*/
+
+
+
+                /*
+                <Form action="Concert">
+                    <input type="submit"/>
+                </form>
+
+                <script>
+                    function
+                </script>
+
+    */
             }
 
             return View();
@@ -41,7 +65,13 @@ namespace ConcertRewind.Controllers
 
             foreach (string song in c.songsPlayed)
             {
-                ViewBag.songsPlayed += "<li>" + song + "</li>";
+                string artist = Replace(ViewBag.artist);
+                string songTwo = Replace(song);
+                string location = Replace(ViewBag.location);
+
+                ViewBag.songsPlayed += "<li> <a href=https://www.youtube.com/results?search_query=" + songTwo + "+" + location + artist + " " + "target =_blank" + ">" + song + "</a> </li>";
+
+
             }
 
             return View();
