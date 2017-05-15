@@ -14,61 +14,56 @@ namespace ConcertRewind.Controllers
     {
         public static JObject setlistApi;
 
+        //Replace spaces with '+' for YouTube search queries
         public string Replace(string info)
         {
             string output = info.Replace(" ", "+");
-
 
             return output;
         }
 
         public ActionResult Results(string artistName)
         {
+            //Generate JObject for JSON from Setlist.fm API
             setlistApi = GenerateSetlistApi(artistName);
 
-            //Generate artist object
-            //artist artist = new Models.artist(artistName);
-
-            //Get list of concert objects
+            //Generate list of concert objects
             List<concert> recentConcerts = GetConcerts(artistName);
-            /*
-            foreach (concert concert in recentConcerts)
-            {
-                string concertInfo = concert.city + ", " + concert.state + ": " + concert.date;
-                //ViewBag.recentConcerts += "<li>" + concertInfo + " " + "<input type=\"button\" value=\"Go to Concert\" onclick=\"location.href = '<%: Url.Action(\"Concert\", \"Setlist\", new { parameter1 = \"concert\" }) %>\" />"</li>";
-
-                ViewBag.recentConcerts += "<li>@Html.ActionLink(\"" + concertInfo + "\", \"Concert\", \"Setlist\", new {parameter1=\"concert\"})</li>";
-
-
-            }*/
 
             return View(recentConcerts);
         }
 
 
-        //Get Setlist API JSON object
+        //Generate Setlist API JSON JObject
         private static JObject GenerateSetlistApi(string artistName)
         {
-            HttpWebRequest request =
+            try
+            {
+                HttpWebRequest request =
 
-            //Load setlist json for chosen artist from setlist.fm API
-            WebRequest.CreateHttp("http://api.setlist.fm/rest/0.1/search/setlists.json?artistName=" + artistName);
+                //Load setlist json for chosen artist from setlist.fm API
+                WebRequest.CreateHttp("http://api.setlist.fm/rest/0.1/search/setlists.json?artistName=" + artistName);
 
-            //Tells the user what browsers we're using
-            request.UserAgent = @"User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36";
+                //Tells the user what browsers we're using
+                request.UserAgent = @"User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36";
 
-            //actually grabs the request
+                //actually grabs the request
 
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
-            //gets a stream of text
-            StreamReader rd = new StreamReader(response.GetResponseStream());
+                //gets a stream of text
+                StreamReader rd = new StreamReader(response.GetResponseStream());
 
-            //reads to the end of file
-            string ApiText = rd.ReadToEnd();
+                //reads to the end of file
+                string ApiText = rd.ReadToEnd();
 
-            //Converts that text into JSON
-            JObject setlistApi = JObject.Parse(ApiText);
+                //Converts that text into JSON
+                JObject setlistApi = JObject.Parse(ApiText);
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("Unable to communicate with Setlist.fm API.");
+            }
 
             return setlistApi;
         }
@@ -77,10 +72,7 @@ namespace ConcertRewind.Controllers
         //Return Concert view for concert matching id on setlist.fm API
         public ActionResult Concert(string artistName, string concertId)
         {
-            //Generate artist object
-            //artist a = new Models.artist(artistName);
-
-            //Get list of concert objects
+            //Generate list of concert objects
             List<concert> recentConcerts = GetConcerts(artistName);
             
             foreach(concert c in recentConcerts)
@@ -108,15 +100,15 @@ namespace ConcertRewind.Controllers
         //Get a list of recent concerts by an artist (up to 10)
         public static List<concert> GetConcerts(string artistName)
         {
-            //Get name and JObject for artist
-            //string artistName = a.name;
-            //JObject setlist = a.setlistApi;
-
             List<concert> recentConcerts = new List<concert>();
 
             int totalConcerts = setlistApi["setlists"]["setlist"].Count();
 
-            if(totalConcerts < 10)
+            if (totalConcerts == 0)
+            {
+
+            }
+            else if(totalConcerts < 10)
             {
                 for(int i = 0; i < totalConcerts; i++)
                 {
@@ -137,12 +129,15 @@ namespace ConcertRewind.Controllers
         //Generate concert object
         public static concert GetSetList(string artistName, int concertIndex)
         {
-            //Get name and JObject for artist
-            //string artistName = a.name;
-            //JObject setlist = a.setlistApi;
-
-            //Get date and location of previous concert
-            string artist = setlistApi["setlists"]["setlist"][concertIndex]["artist"]["@name"].ToString();
+            //Get info (date, location, etc.) of concert
+            try
+            {
+                string artist = setlistApi["setlists"]["setlist"][concertIndex]["artist"]["@name"].ToString();
+            }
+            catch (System.NullReferenceException)
+            {
+                Console.WriteLine("There is no info on artist \"" + artistName + "\" available on Setlist.fm.");
+            }
 
             string date = "Date info not available.";
             try
@@ -164,17 +159,23 @@ namespace ConcertRewind.Controllers
                 Console.WriteLine("No city info available for this concert.");
             }
 
+            //Find state. If no state info available, try to find country instead.
             string state = "State/country info not available.";
             try
             {
-                state = setlistApi["setlists"]["setlist"][concertIndex]["venue"]["city"]["country"]["@name"].ToString();
+                state = setlistApi["setlists"]["setlist"][concertIndex]["venue"]["city"]["@state"].ToString();
             }
             catch (System.NullReferenceException)
             {
-                Console.WriteLine("No state/country info available for this concert.");
+                try
+                {
+                    state = setlistApi["setlists"]["setlist"][concertIndex]["venue"]["city"]["country"]["@name"].ToString();
+                }
+                catch (System.NullReferenceException)
+                {
+                    Console.WriteLine("No state/country info available for this concert.");
+                }
             }
-
-            //string state = setlist["setlists"]["setlist"][concertIndex]["venue"]["city"]["@state"].ToString();
 
             string venue = "Venue info not available.";
             try
@@ -233,9 +234,9 @@ namespace ConcertRewind.Controllers
                 }
             }
 
-            concert concert = new Models.concert(artist, date, city, state, venue, tour, songsPlayed, id);
+            //Build and return concert object
+            concert concert = new Models.concert(artistName, date, city, state, venue, tour, songsPlayed, id);
 
-            //Go to results view
             return concert;
         }
     }
