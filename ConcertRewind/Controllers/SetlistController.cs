@@ -27,8 +27,22 @@ namespace ConcertRewind.Controllers
             //Generate JObject for JSON from Setlist.fm API
             setlistApi = GenerateSetlistApi(artistName);
 
+            //Go to error view if Setlist API didn't load properly
+            if(setlistApi == null)
+            {
+                ViewBag.errorMessage = "There is no data available for this artist, or there was a problem connecting to the Setlist.fm server. Please try again.";
+                return View("error");
+            }
+
             //Generate list of concert objects
             List<concert> recentConcerts = GetConcerts(artistName);
+
+            //Go to error view if no concert data available
+            if(recentConcerts == null)
+            {
+                ViewBag.errorMessage = "There is no concert data available for artist \"" + artistName + "\".";
+                return View("error");
+            }
 
             return View(recentConcerts);
         }
@@ -37,18 +51,19 @@ namespace ConcertRewind.Controllers
         //Generate Setlist API JSON JObject
         private static JObject GenerateSetlistApi(string artistName)
         {
+            string apiKey = "d62d3a2f-a8c2-45a7-aa2e-405dc018fb62";
+            
             try
             {
                 HttpWebRequest request =
 
                 //Load setlist json for chosen artist from setlist.fm API
-                WebRequest.CreateHttp("http://api.setlist.fm/rest/0.1/search/setlists.json?artistName=" + artistName);
+                WebRequest.CreateHttp("http://api.setlist.fm/rest/0.1/search/setlists.json?artistName=" + artistName + "&?key=" + apiKey);
 
                 //Tells the user what browsers we're using
                 request.UserAgent = @"User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36";
 
                 //actually grabs the request
-
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
                 //gets a stream of text
@@ -63,8 +78,21 @@ namespace ConcertRewind.Controllers
             catch(Exception)
             {
                 Console.WriteLine("Unable to communicate with Setlist.fm API.");
+                setlistApi = null;
             }
 
+
+            /*
+            //Backup JSON if Setlist.fm is not working during demo! Type "Rihanna" at index.
+            //StreamReader rd = new StreamReader(@"C:\Users\Mike Spisich\Documents\Visual Studio 2015\Projects\ConcertRewind\ConcertRewind\setlistapibackup");
+            StreamReader rd = new StreamReader(@"C:\Users\Mike Spisich\Documents\Visual Studio 2015\Projects\ConcertRewind\ConcertRewind\jimmyeatworldjson");
+            string ApiText = rd.ReadToEnd();
+
+            //Converts that text into JSON
+            JObject setlistApi = JObject.Parse(ApiText);
+            */
+
+        
             return setlistApi;
         }
 
@@ -83,6 +111,7 @@ namespace ConcertRewind.Controllers
                     ViewBag.date = c.date;
                     ViewBag.location = c.city + ", " + c.state;
                     ViewBag.tour = c.tour;
+                    ViewBag.songsPlayed = "";
 
                     foreach (string song in c.songsPlayed)
                     {
@@ -102,7 +131,16 @@ namespace ConcertRewind.Controllers
         {
             List<concert> recentConcerts = new List<concert>();
 
-            int totalConcerts = setlistApi["setlists"]["setlist"].Count();
+            int totalConcerts = 0;
+            try
+            {
+                totalConcerts = setlistApi["setlists"]["setlist"].Count();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("There is no concert info available for this artist.");
+                return null;
+            }
 
             if (totalConcerts == 0)
             {
@@ -130,16 +168,17 @@ namespace ConcertRewind.Controllers
         public static concert GetSetList(string artistName, int concertIndex)
         {
             //Get info (date, location, etc.) of concert
+            string artist;
             try
             {
-                string artist = setlistApi["setlists"]["setlist"][concertIndex]["artist"]["@name"].ToString();
+                artist = setlistApi["setlists"]["setlist"][concertIndex]["artist"]["@name"].ToString();
             }
             catch (System.NullReferenceException)
             {
-                Console.WriteLine("There is no info on artist \"" + artistName + "\" available on Setlist.fm.");
+                artist = artistName;
             }
 
-            string date = "Date info not available.";
+            string date = null;
             try
             {
                 date = setlistApi["setlists"]["setlist"][concertIndex]["@eventDate"].ToString();
@@ -149,7 +188,7 @@ namespace ConcertRewind.Controllers
                 Console.WriteLine("No date info available for this concert.");
             }
 
-            string city = "City info not available.";
+            string city = null;
             try
             {
                 city = setlistApi["setlists"]["setlist"][concertIndex]["venue"]["city"]["@name"].ToString();
@@ -160,7 +199,7 @@ namespace ConcertRewind.Controllers
             }
 
             //Find state. If no state info available, try to find country instead.
-            string state = "State/country info not available.";
+            string state = null;
             try
             {
                 state = setlistApi["setlists"]["setlist"][concertIndex]["venue"]["city"]["@state"].ToString();
@@ -177,7 +216,7 @@ namespace ConcertRewind.Controllers
                 }
             }
 
-            string venue = "Venue info not available.";
+            string venue = null;
             try
             {
                 venue = setlistApi["setlists"]["setlist"][concertIndex]["venue"]["@name"].ToString();
@@ -187,7 +226,7 @@ namespace ConcertRewind.Controllers
                 Console.WriteLine("No venue info available for this concert.");
             }
 
-            string tour = "n/a";
+            string tour = null;
             try
             {
                 tour = setlistApi["setlists"]["setlist"][concertIndex]["@tour"].ToString();
@@ -201,17 +240,20 @@ namespace ConcertRewind.Controllers
 
             List<string> songsPlayed = new List<string>();
 
-            int totalSets = setlistApi["setlists"]["setlist"][concertIndex]["sets"]["set"].Count();
+            int totalSets = 0;
+            try
+            {
+                totalSets = setlistApi["setlists"]["setlist"][concertIndex]["sets"]["set"].Count();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("There is no set information for this concert.");
+            }
 
             //Check through each set from concert
 
-            //Case of no songs
-            if (totalSets <= 0)
-            {
-                //***********Add exception here!************
-            }
             //Case of only one set at concert
-            else if (totalSets == 1)
+            if (totalSets == 1)
             {
                 //Check through each song from set
                 for (int songIndex = 0; songIndex < setlistApi["setlists"]["setlist"][concertIndex]["sets"]["set"]["song"].Count(); songIndex++)
@@ -221,7 +263,7 @@ namespace ConcertRewind.Controllers
                 }
             }
             //Case of multiple sets at concert
-            else
+            else if (totalSets > 1)
             {
                 for (int setIndex = 0; setIndex < setlistApi["setlists"]["setlist"][concertIndex]["sets"]["set"].Count(); setIndex++)
                 {

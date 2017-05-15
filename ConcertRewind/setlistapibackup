@@ -1,0 +1,3630 @@
+{
+ "setlists":{
+  "@itemsPerPage":"20",
+  "@page":"1",
+  "@total":"629",
+  "setlist":[
+   {
+    "@eventDate":"27-11-2016",
+    "@id":"2bfbac06",
+    "@lastUpdated":"2017-05-07T21:10:46.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"b5ab94e",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"63d74a9b",
+     "@name":"du Arena at Yas Island",
+     "city":{
+      "@id":"292968",
+      "@name":"Abu Dhabi",
+      "@stateCode":"01",
+      "coords":{
+       "@lat":"24.4666667",
+       "@long":"54.3666667"
+      },
+      "country":{
+       "@code":"AE",
+       "@name":"United Arab Emirates"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/du-arena-at-yas-island-abu-dhabi-united-arab-emirates-63d74a9b.html"
+    },
+    "sets":{
+     "set":{
+      "song":[
+       {
+        "@name":"Stay"
+       },
+       {
+        "@name":"Love the Way You Lie (Part II)"
+       },
+       {
+        "@name":"Birthday Cake"
+       },
+       {
+        "@name":"Pour It Up"
+       },
+       {
+        "@name":"Numb"
+       },
+       {
+        "@name":"Bitch Better Have My Money"
+       },
+       {
+        "@name":"Goodnight Gotham"
+       },
+       {
+        "@name":"Consideration"
+       },
+       {
+        "@name":"Live Your Life",
+        "cover":{
+         "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+         "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+         "@name":"T.I.",
+         "@sortName":"T.I.",
+         "@tmid":"966058",
+         "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+        }
+       },
+       {
+        "@name":"Run This Town",
+        "cover":{
+         "@disambiguation":"US rapper, formerly Jay-Z",
+         "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+         "@name":"JAY Z",
+         "@sortName":"JAY Z",
+         "@tmid":"781009",
+         "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+        }
+       },
+       {
+        "@name":"All of the Lights",
+        "cover":{
+         "@disambiguation":"",
+         "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+         "@name":"Kanye West",
+         "@sortName":"West, Kanye",
+         "@tmid":"885590",
+         "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+        }
+       },
+       {
+        "@name":"Umbrella"
+       },
+       {
+        "@name":"Desperado"
+       },
+       {
+        "@name":"Man Down"
+       },
+       {
+        "@name":"Rude Boy"
+       },
+       {
+        "@name":"Work"
+       },
+       {
+        "@name":"Take Care",
+        "cover":{
+         "@disambiguation":"Canadian actor\/rapper",
+         "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+         "@name":"Drake",
+         "@sortName":"Drake",
+         "@tmid":"1319371",
+         "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+        }
+       },
+       {
+        "@name":"We Found Love"
+       },
+       {
+        "@name":"Where Have You Been"
+       },
+       {
+        "@name":"Needed Me"
+       },
+       {
+        "@name":"Same Ol' Mistakes"
+       },
+       {
+        "@name":"Diamonds"
+       },
+       {
+        "@name":"FourFiveSeconds",
+        "cover":{
+         "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+         "@name":"Rihanna and Kanye West and Paul McCartney",
+         "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+         "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+        }
+       },
+       {
+        "@name":"Love on the Brain"
+       }
+      ]
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/du-arena-at-yas-island-abu-dhabi-united-arab-emirates-2bfbac06.html"
+   },
+   {
+    "@eventDate":"24-09-2016",
+    "@id":"6bfdf692",
+    "@lastUpdated":"2017-02-05T11:33:03.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"4350ebdb",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"4bd4bb06",
+     "@name":"Great Lawn in Central Park",
+     "city":{
+      "@id":"5128581",
+      "@name":"New York",
+      "@state":"New York",
+      "@stateCode":"NY",
+      "coords":{
+       "@lat":"40.7142691",
+       "@long":"-74.0059729"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/great-lawn-in-central-park-new-york-ny-usa-4bd4bb06.html"
+    },
+    "sets":{
+     "set":{
+      "song":[
+       {
+        "@name":"Stay"
+       },
+       {
+        "@name":"Birthday Cake"
+       },
+       {
+        "@name":"Pour It Up"
+       },
+       {
+        "@name":"Numb"
+       },
+       {
+        "@name":"Bitch Better Have My Money"
+       },
+       {
+        "@name":"Goodnight Gotham",
+        "info":"Interlude"
+       },
+       {
+        "@name":"Consideration"
+       },
+       {
+        "@name":"Live Your Life",
+        "cover":{
+         "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+         "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+         "@name":"T.I.",
+         "@sortName":"T.I.",
+         "@tmid":"966058",
+         "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+        }
+       },
+       {
+        "@name":"Run This Town",
+        "cover":{
+         "@disambiguation":"US rapper, formerly Jay-Z",
+         "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+         "@name":"JAY Z",
+         "@sortName":"JAY Z",
+         "@tmid":"781009",
+         "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+        }
+       },
+       {
+        "@name":"All of the Lights",
+        "cover":{
+         "@disambiguation":"",
+         "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+         "@name":"Kanye West",
+         "@sortName":"West, Kanye",
+         "@tmid":"885590",
+         "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+        }
+       },
+       {
+        "@name":"Umbrella"
+       },
+       {
+        "@name":"Desperado"
+       },
+       {
+        "@name":"Work"
+       },
+       {
+        "@name":"Take Care",
+        "cover":{
+         "@disambiguation":"Canadian actor\/rapper",
+         "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+         "@name":"Drake",
+         "@sortName":"Drake",
+         "@tmid":"1319371",
+         "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+        }
+       },
+       {
+        "@name":"We Found Love",
+        "info":"\"How Deep is Your Love\" Remix"
+       },
+       {
+        "@name":"Where Have You Been"
+       },
+       {
+        "@name":"Needed Me"
+       },
+       {
+        "@name":"Same Ol' Mistakes"
+       },
+       {
+        "@name":"Diamonds"
+       },
+       {
+        "@name":"FourFiveSeconds",
+        "cover":{
+         "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+         "@name":"Rihanna and Kanye West and Paul McCartney",
+         "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+         "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+        }
+       },
+       {
+        "@name":"Love on the Brain"
+       }
+      ]
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/great-lawn-in-central-park-new-york-ny-6bfdf692.html"
+   },
+   {
+    "@eventDate":"03-09-2016",
+    "@id":"43fc77e3",
+    "@lastUpdated":"2017-02-05T11:32:48.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"5350ebe5",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"1bd66118",
+     "@name":"Benjamin Franklin Parkway",
+     "city":{
+      "@id":"4560349",
+      "@name":"Philadelphia",
+      "@state":"Pennsylvania",
+      "@stateCode":"PA",
+      "coords":{
+       "@lat":"39.952335",
+       "@long":"-75.163789"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/benjamin-franklin-parkway-philadelphia-pa-usa-1bd66118.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"B-Stage",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        }
+       ]
+      },
+      {
+       "@name":"Catwalk Stage",
+       "song":[
+        {
+         "@name":"Woo"
+        },
+        {
+         "@name":"Sex with Me"
+        }
+       ]
+      },
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        },
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/benjamin-franklin-parkway-philadelphia-pa-43fc77e3.html"
+   },
+   {
+    "@eventDate":"28-08-2016",
+    "@id":"3fc19ab",
+    "@lastUpdated":"2016-12-23T06:34:38.000+0000",
+    "@versionId":"2b52a43a",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"23d63cc7",
+     "@name":"Madison Square Garden",
+     "city":{
+      "@id":"5128581",
+      "@name":"New York",
+      "@state":"New York",
+      "@stateCode":"NY",
+      "coords":{
+       "@lat":"40.7142691",
+       "@long":"-74.0059729"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/madison-square-garden-new-york-ny-usa-23d63cc7.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"Set 1",
+       "song":[
+        {
+         "@name":"Don't Stop the Music"
+        },
+        {
+         "@name":"Only Girl (In the World)"
+        },
+        {
+         "@name":"We Found Love"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Set 2",
+       "song":[
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"What's My Name?"
+        },
+        {
+         "@name":"Work"
+        }
+       ]
+      },
+      {
+       "@name":"Set 3",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Set 4",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"Love on the Brain"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/madison-square-garden-new-york-ny-3fc19ab.html"
+   },
+   {
+    "@eventDate":"21-08-2016",
+    "@id":"53fcc3ad",
+    "@lastUpdated":"2017-02-05T11:32:27.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"4350ebe3",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"2bd63072",
+     "@name":"Hylands Park",
+     "city":{
+      "@id":"2653266",
+      "@name":"Chelmsford",
+      "@state":"England",
+      "@stateCode":"ENG",
+      "coords":{
+       "@lat":"51.7333333",
+       "@long":"0.4833333"
+      },
+      "country":{
+       "@code":"GB",
+       "@name":"United Kingdom"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/hylands-park-chelmsford-england-2bd63072.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        },
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/hylands-park-chelmsford-england-53fcc3ad.html"
+   },
+   {
+    "@eventDate":"20-08-2016",
+    "@id":"53fcc3a9",
+    "@lastUpdated":"2017-02-05T11:32:15.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"5350ebed",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"6bd6da52",
+     "@name":"Weston Park",
+     "city":{
+      "@id":"2637142",
+      "@name":"Stafford",
+      "@state":"England",
+      "@stateCode":"ENG",
+      "coords":{
+       "@lat":"52.8",
+       "@long":"-2.1"
+      },
+      "country":{
+       "@code":"GB",
+       "@name":"United Kingdom"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/weston-park-stafford-england-6bd6da52.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        },
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/weston-park-stafford-england-53fcc3a9.html"
+   },
+   {
+    "@eventDate":"18-08-2016",
+    "@id":"43fcdbdb",
+    "@lastUpdated":"2016-08-29T13:36:38.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"7baa666c",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"23d6c083",
+     "@name":"Kiewit",
+     "city":{
+      "@id":"2796490",
+      "@name":"Hasselt",
+      "@state":"Flanders",
+      "@stateCode":"VLG",
+      "coords":{
+       "@lat":"50.93",
+       "@long":"5.3375"
+      },
+      "country":{
+       "@code":"BE",
+       "@name":"Belgium"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/kiewit-hasselt-belgium-23d6c083.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        },
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/kiewit-hasselt-belgium-43fcdbdb.html"
+   },
+   {
+    "@eventDate":"16-08-2016",
+    "@id":"53fce335",
+    "@lastUpdated":"2016-08-29T13:37:30.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"7baa6660",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"3bd45448",
+     "@name":"Mercedes-Benz Arena",
+     "city":{
+      "@id":"2950159",
+      "@name":"Berlin",
+      "@state":"Berlin",
+      "@stateCode":"16",
+      "coords":{
+       "@lat":"52.5166667",
+       "@long":"13.4"
+      },
+      "country":{
+       "@code":"DE",
+       "@name":"Germany"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/mercedes-benz-arena-berlin-germany-3bd45448.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"B-Stage",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        }
+       ]
+      },
+      {
+       "@name":"Catwalk Stage",
+       "song":[
+        {
+         "@name":"Woo"
+        },
+        {
+         "@name":"Sex with Me"
+        }
+       ]
+      },
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/mercedes-benz-arena-berlin-germany-53fce335.html"
+   },
+   {
+    "@eventDate":"14-08-2016",
+    "@id":"2bfcdc8a",
+    "@lastUpdated":"2016-08-29T13:40:24.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"7baa665c",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"33d668a1",
+     "@name":"Piata Constitutiei",
+     "city":{
+      "@id":"683506",
+      "@name":"Bucharest",
+      "@stateCode":"09",
+      "coords":{
+       "@lat":"44.433",
+       "@long":"26.1"
+      },
+      "country":{
+       "@code":"RO",
+       "@name":"Romania"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/piata-constitutiei-bucharest-romania-33d668a1.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        },
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/piata-constitutiei-bucharest-romania-2bfcdc8a.html"
+   },
+   {
+    "@eventDate":"12-08-2016",
+    "@id":"53fcef75",
+    "@lastUpdated":"2016-08-29T13:40:43.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"6baa6652",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"23d61c2f",
+     "@name":"Letzigrund Stadion",
+     "city":{
+      "@id":"2657896",
+      "@name":"Zurich",
+      "@state":"Zürich",
+      "@stateCode":"ZH",
+      "coords":{
+       "@lat":"47.3666667",
+       "@long":"8.55"
+      },
+      "country":{
+       "@code":"CH",
+       "@name":"Switzerland"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/letzigrund-stadion-zurich-switzerland-23d61c2f.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"B-Stage",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        }
+       ]
+      },
+      {
+       "@name":"Catwalk Stage",
+       "song":[
+        {
+         "@name":"Woo"
+        },
+        {
+         "@name":"Sex with Me"
+        }
+       ]
+      },
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/letzigrund-stadion-zurich-switzerland-53fcef75.html"
+   },
+   {
+    "@eventDate":"11-08-2016",
+    "@id":"5bfc87e0",
+    "@lastUpdated":"2016-08-29T13:42:05.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"73aa6655",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"23d6d46b",
+     "@name":"Óbudai-Sziget",
+     "city":{
+      "@id":"3054643",
+      "@name":"Budapest",
+      "@state":"Budapest",
+      "@stateCode":"05",
+      "coords":{
+       "@lat":"47.5",
+       "@long":"19.0833333"
+      },
+      "country":{
+       "@code":"HU",
+       "@name":"Hungary"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/obudai-sziget-budapest-hungary-23d6d46b.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        },
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"Love on the Brain"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/obudai-sziget-budapest-hungary-5bfc87e0.html"
+   },
+   {
+    "@eventDate":"09-08-2016",
+    "@id":"2bfc80c6",
+    "@lastUpdated":"2016-08-29T13:42:51.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"73aa6649",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"3d6cdfb",
+     "@name":"Wiener Stadthalle",
+     "city":{
+      "@id":"2761369",
+      "@name":"Vienna",
+      "@state":"Vienna",
+      "@stateCode":"09",
+      "coords":{
+       "@lat":"48.2084877601653",
+       "@long":"16.3720750808716"
+      },
+      "country":{
+       "@code":"AT",
+       "@name":"Austria"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/wiener-stadthalle-vienna-austria-3d6cdfb.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"B-Stage",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        }
+       ]
+      },
+      {
+       "@name":"Catwalk Stage",
+       "song":[
+        {
+         "@name":"Woo"
+        },
+        {
+         "@name":"Sex with Me"
+        }
+       ]
+      },
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/wiener-stadthalle-vienna-austria-2bfc80c6.html"
+   },
+   {
+    "@eventDate":"07-08-2016",
+    "@id":"33fc8c21",
+    "@lastUpdated":"2016-08-29T13:43:49.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"6baa664e",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"4bd63716",
+     "@name":"Olympiastadion",
+     "city":{
+      "@id":"2867714",
+      "@name":"Munich",
+      "@state":"Bavaria",
+      "@stateCode":"02",
+      "coords":{
+       "@lat":"48.1374325498109",
+       "@long":"11.5754914283752"
+      },
+      "country":{
+       "@code":"DE",
+       "@name":"Germany"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/olympiastadion-munich-germany-4bd63716.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"B-Stage",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        }
+       ]
+      },
+      {
+       "@name":"Catwalk Stage",
+       "song":[
+        {
+         "@name":"Woo"
+        },
+        {
+         "@name":"Sex with Me"
+        }
+       ]
+      },
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/olympiastadion-munich-germany-33fc8c21.html"
+   },
+   {
+    "@eventDate":"05-08-2016",
+    "@id":"63fcaa93",
+    "@lastUpdated":"2016-08-29T13:45:10.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"7baa6640",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"63d52a5f",
+     "@name":"PGE Narodowy",
+     "city":{
+      "@id":"756135",
+      "@name":"Warsaw",
+      "@state":"Masovian Voivodeship",
+      "@stateCode":"78",
+      "coords":{
+       "@lat":"52.25",
+       "@long":"21.0"
+      },
+      "country":{
+       "@code":"PL",
+       "@name":"Poland"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/pge-narodowy-warsaw-poland-63d52a5f.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"B-Stage",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        }
+       ]
+      },
+      {
+       "@name":"Catwalk Stage",
+       "song":[
+        {
+         "@name":"Woo"
+        },
+        {
+         "@name":"Sex with Me"
+        }
+       ]
+      },
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/pge-narodowy-warsaw-poland-63fcaa93.html"
+   },
+   {
+    "@eventDate":"03-08-2016",
+    "@id":"63fcaaff",
+    "@lastUpdated":"2016-08-29T13:46:05.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"63aa663b",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"3bd6c854",
+     "@name":"Dyrehaven",
+     "city":{
+      "@id":"2613887",
+      "@name":"Skanderborg",
+      "@state":"Central Jutland",
+      "@stateCode":"18",
+      "coords":{
+       "@lat":"56.0399128222392",
+       "@long":"9.92719888687134"
+      },
+      "country":{
+       "@code":"DK",
+       "@name":"Denmark"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/dyrehaven-skanderborg-denmark-3bd6c854.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        },
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/dyrehaven-skanderborg-denmark-63fcaaff.html"
+   },
+   {
+    "@eventDate":"02-08-2016",
+    "@id":"5bfca788",
+    "@lastUpdated":"2016-08-29T13:46:35.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"7baa6638",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"73d6c62d",
+     "@name":"Malmö Arena",
+     "city":{
+      "@id":"2692969",
+      "@name":"Malmö",
+      "@state":"Skåne County",
+      "@stateCode":"27",
+      "coords":{
+       "@lat":"55.6058691373243",
+       "@long":"13.0007314682007"
+      },
+      "country":{
+       "@code":"SE",
+       "@name":"Sweden"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/malmo-arena-malmo-sweden-73d6c62d.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"B-Stage",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        }
+       ]
+      },
+      {
+       "@name":"Catwalk Stage",
+       "song":[
+        {
+         "@name":"Woo"
+        },
+        {
+         "@name":"Sex with Me"
+        }
+       ]
+      },
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/malmo-arena-malmo-sweden-5bfca788.html"
+   },
+   {
+    "@eventDate":"30-07-2016",
+    "@id":"73ff5205",
+    "@lastUpdated":"2016-08-31T17:44:45.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"3aa4553",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"3bd6c4d8",
+     "@name":"Stade de France",
+     "city":{
+      "@id":"2980916",
+      "@name":"Saint-Denis",
+      "@state":"Île-de-France",
+      "@stateCode":"A8",
+      "coords":{
+       "@lat":"48.9333333",
+       "@long":"2.3666667"
+      },
+      "country":{
+       "@code":"FR",
+       "@name":"France"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/stade-de-france-saint-denis-france-3bd6c4d8.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"B-Stage",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        }
+       ]
+      },
+      {
+       "@name":"Catwalk Stage",
+       "song":[
+        {
+         "@name":"Woo"
+        },
+        {
+         "@name":"Sex with Me"
+        }
+       ]
+      },
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "@tape":"true",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds",
+         "info":"Rihanna dedicated \"Diamonds\" to the Attack in France"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        },
+        {
+         "@name":"Higher",
+         "@tape":"true",
+         "info":"Instrumental"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/stade-de-france-saint-denis-france-73ff5205.html"
+   },
+   {
+    "@eventDate":"28-07-2016",
+    "@id":"4bff47da",
+    "@lastUpdated":"2016-08-29T13:49:06.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"73aa6629",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"13d7f5d5",
+     "@name":"RheinEnergieStadion",
+     "city":{
+      "@id":"2886242",
+      "@name":"Cologne",
+      "@state":"North Rhine-Westphalia",
+      "@stateCode":"07",
+      "coords":{
+       "@lat":"50.9333333",
+       "@long":"6.95"
+      },
+      "country":{
+       "@code":"DE",
+       "@name":"Germany"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/rheinenergiestadion-cologne-germany-13d7f5d5.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"B-Stage",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        }
+       ]
+      },
+      {
+       "@name":"Catwalk Stage",
+       "song":[
+        {
+         "@name":"Woo"
+        },
+        {
+         "@name":"Sex with Me"
+        }
+       ]
+      },
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/rheinenergiestadion-cologne-germany-4bff47da.html"
+   },
+   {
+    "@eventDate":"26-07-2016",
+    "@id":"3ff61f7",
+    "@lastUpdated":"2016-08-29T13:50:05.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"73aa662d",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"73d63671",
+     "@name":"O2 Arena",
+     "city":{
+      "@id":"3067696",
+      "@name":"Prague",
+      "@state":"Hlavní Mesto Praha",
+      "@stateCode":"52",
+      "coords":{
+       "@lat":"50.0878367932108",
+       "@long":"14.4241322001241"
+      },
+      "country":{
+       "@code":"CZ",
+       "@name":"Czech Republic"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/o2-arena-prague-czech-republic-73d63671.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"B-Stage",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        }
+       ]
+      },
+      {
+       "@name":"Catwalk Stage",
+       "song":[
+        {
+         "@name":"Woo"
+        },
+        {
+         "@name":"Sex with Me"
+        }
+       ]
+      },
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/o2-arena-prague-czech-republic-3ff61f7.html"
+   },
+   {
+    "@eventDate":"23-07-2016",
+    "@id":"1bff79b4",
+    "@lastUpdated":"2017-05-11T13:16:45.000+0000",
+    "@tour":"ANTi World Tour",
+    "@versionId":"7b5afa88",
+    "artist":{
+     "@disambiguation":"Barbadian R&B\/pop singer",
+     "@mbid":"73e5e69d-3554-40d8-8516-00cb38737a1c",
+     "@name":"Rihanna",
+     "@sortName":"Rihanna",
+     "@tmid":"1013826",
+     "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-1bd6bdbc.html"
+    },
+    "venue":{
+     "@id":"53d573d9",
+     "@name":"Stade Pierre-Mauroy",
+     "city":{
+      "@id":"6543862",
+      "@name":"Villeneuve-d'Ascq",
+      "@state":"Nord-Pas-de-Calais",
+      "@stateCode":"B4",
+      "coords":{
+       "@lat":"50.61669",
+       "@long":"3.16664"
+      },
+      "country":{
+       "@code":"FR",
+       "@name":"France"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/stade-pierre-mauroy-villeneuve-dascq-france-53d573d9.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "@name":"B-Stage",
+       "song":[
+        {
+         "@name":"Stay"
+        },
+        {
+         "@name":"Love the Way You Lie (Part II)"
+        }
+       ]
+      },
+      {
+       "@name":"Catwalk Stage",
+       "song":[
+        {
+         "@name":"Woo"
+        },
+        {
+         "@name":"Sex with Me"
+        }
+       ]
+      },
+      {
+       "@name":"Act I",
+       "song":[
+        {
+         "@name":"Birthday Cake"
+        },
+        {
+         "@name":"Pour It Up"
+        },
+        {
+         "@name":"Numb"
+        },
+        {
+         "@name":"Bitch Better Have My Money"
+        }
+       ]
+      },
+      {
+       "@name":"Act II",
+       "song":[
+        {
+         "@name":"Goodnight Gotham",
+         "@tape":"true",
+         "info":"Interlude"
+        },
+        {
+         "@name":"Consideration"
+        },
+        {
+         "@name":"Live Your Life",
+         "cover":{
+          "@disambiguation":"Atlanta US rapper & producer Clifford Harris",
+          "@mbid":"f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+          "@name":"T.I.",
+          "@sortName":"T.I.",
+          "@tmid":"966058",
+          "url":"http:\/\/www.setlist.fm\/setlists\/ti-4bd6bfa6.html"
+         }
+        },
+        {
+         "@name":"Run This Town",
+         "cover":{
+          "@disambiguation":"US rapper, formerly Jay-Z",
+          "@mbid":"f82bcf78-5b69-4622-a5ef-73800768d9ac",
+          "@name":"JAY Z",
+          "@sortName":"JAY Z",
+          "@tmid":"781009",
+          "url":"http:\/\/www.setlist.fm\/setlists\/jay-z-2bd69c72.html"
+         }
+        },
+        {
+         "@name":"All of the Lights",
+         "cover":{
+          "@disambiguation":"",
+          "@mbid":"164f0d73-1234-4e2c-8743-d77bf2191051",
+          "@name":"Kanye West",
+          "@sortName":"West, Kanye",
+          "@tmid":"885590",
+          "url":"http:\/\/www.setlist.fm\/setlists\/kanye-west-bd6bd8a.html"
+         }
+        },
+        {
+         "@name":"Umbrella"
+        },
+        {
+         "@name":"Desperado"
+        }
+       ]
+      },
+      {
+       "@name":"Act III",
+       "song":[
+        {
+         "@name":"Man Down"
+        },
+        {
+         "@name":"Rude Boy"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Take Care",
+         "cover":{
+          "@disambiguation":"Canadian actor\/rapper",
+          "@mbid":"9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+          "@name":"Drake",
+          "@sortName":"Drake",
+          "@tmid":"1319371",
+          "url":"http:\/\/www.setlist.fm\/setlists\/drake-23d774a3.html"
+         }
+        },
+        {
+         "@name":"We Found Love",
+         "info":"\"How Deep is Your Love\" Remix"
+        },
+        {
+         "@name":"Where Have You Been"
+        }
+       ]
+      },
+      {
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Needed Me"
+        },
+        {
+         "@name":"Same Ol' Mistakes"
+        },
+        {
+         "@name":"Diamonds"
+        },
+        {
+         "@name":"FourFiveSeconds",
+         "cover":{
+          "@mbid":"13e82936-d822-44db-a844-02c9d85e589f",
+          "@name":"Rihanna and Kanye West and Paul McCartney",
+          "@sortName":"Rihanna and West, Kanye and McCartney, Paul",
+          "url":"http:\/\/www.setlist.fm\/setlists\/rihanna-and-kanye-west-and-paul-mccartney-5bd96fcc.html"
+         }
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "@name":"Act IV",
+       "song":[
+        {
+         "@name":"Love on the Brain"
+        },
+        {
+         "@name":"Kiss It Better"
+        },
+        {
+         "@name":"Higher",
+         "@tape":"true",
+         "info":"Instrumental"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/rihanna\/2016\/stade-pierre-mauroy-villeneuve-dascq-france-1bff79b4.html"
+   }
+  ]
+ }
+}

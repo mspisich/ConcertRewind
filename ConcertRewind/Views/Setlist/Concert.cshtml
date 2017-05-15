@@ -18,4 +18,13 @@
 <h2>@ViewBag.date</h2>
 <h2>@ViewBag.location</h2>
 
-<ol>@Html.Raw(ViewBag.songsPlayed)</ol>
+@{
+    if (ViewBag.songsPlayed.Equals(""))
+    {
+        <ul><li>There is no song info available for this concert.</li></ul>
+    }
+    else
+    {
+        <ol>@Html.Raw(ViewBag.songsPlayed)</ol>
+    }
+}

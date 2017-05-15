@@ -1,0 +1,1897 @@
+{
+ "setlists":{
+  "@itemsPerPage":"20",
+  "@page":"1",
+  "@total":"885",
+  "setlist":[
+   {
+    "@eventDate":"16-05-2017",
+    "@id":"6be78296",
+    "@lastUpdated":"2017-05-14T03:39:46.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"7b5ace30",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"53d61b65",
+     "@name":"Bluebird Nightclub",
+     "city":{
+      "@id":"4254679",
+      "@name":"Bloomington",
+      "@state":"Indiana",
+      "@stateCode":"IN",
+      "coords":{
+       "@lat":"39.165325",
+       "@long":"-86.5263857"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/bluebird-nightclub-bloomington-in-usa-53d61b65.html"
+    },
+    "sets":"",
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/bluebird-nightclub-bloomington-in-6be78296.html"
+   },
+   {
+    "@eventDate":"15-05-2017",
+    "@id":"be78576",
+    "@lastUpdated":"2017-05-13T03:52:18.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"7b5ae2a0",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"23d5f853",
+     "@name":"Mainstage Morgantown",
+     "city":{
+      "@id":"4815352",
+      "@name":"Morgantown",
+      "@state":"West Virginia",
+      "@stateCode":"WV",
+      "coords":{
+       "@lat":"39.629526",
+       "@long":"-79.9558968"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/mainstage-morgantown-morgantown-wv-usa-23d5f853.html"
+    },
+    "sets":"",
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/mainstage-morgantown-morgantown-wv-be78576.html"
+   },
+   {
+    "@eventDate":"14-05-2017",
+    "@id":"43e78f4b",
+    "@lastUpdated":"2017-05-15T13:18:53.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"535a3719",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"53d61ff5",
+     "@name":"Merriweather Post Pavilion",
+     "city":{
+      "@id":"4352053",
+      "@name":"Columbia",
+      "@state":"Maryland",
+      "@stateCode":"MD",
+      "coords":{
+       "@lat":"39.2403841",
+       "@long":"-76.8394184"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/merriweather-post-pavilion-columbia-md-usa-53d61ff5.html"
+    },
+    "sets":{
+     "set":{
+      "song":[
+       {
+        "@name":"Bleed American"
+       },
+       {
+        "@name":"Big Casino"
+       },
+       {
+        "@name":"Get Right"
+       },
+       {
+        "@name":"I Will Steal You Back"
+       },
+       {
+        "@name":"My Best Theory"
+       },
+       {
+        "@name":"Pass the Baby"
+       },
+       {
+        "@name":"Pain"
+       },
+       {
+        "@name":"Futures"
+       },
+       {
+        "@name":"Work"
+       },
+       {
+        "@name":"Hear You Me"
+       },
+       {
+        "@name":"Lucky Denver Mint"
+       },
+       {
+        "@name":"A Praise Chorus"
+       },
+       {
+        "@name":"The Authority Song"
+       },
+       {
+        "@name":"Sure and Certain"
+       },
+       {
+        "@name":"Sweetness"
+       },
+       {
+        "@name":"The Middle"
+       }
+      ]
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/merriweather-post-pavilion-columbia-md-43e78f4b.html"
+   },
+   {
+    "@eventDate":"13-05-2017",
+    "@id":"5be797a8",
+    "@lastUpdated":"2017-05-14T03:22:41.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"435acf27",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"4bd6731a",
+     "@name":"Sherman Theater",
+     "city":{
+      "@id":"5214543",
+      "@name":"Stroudsburg",
+      "@state":"Pennsylvania",
+      "@stateCode":"PA",
+      "coords":{
+       "@lat":"40.9867609",
+       "@long":"-75.1946248"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/sherman-theater-stroudsburg-pa-usa-4bd6731a.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "song":[
+        {
+         "@name":"You with Me"
+        },
+        {
+         "@name":"Bleed American"
+        },
+        {
+         "@name":"I Will Steal You Back"
+        },
+        {
+         "@name":"Get Right"
+        },
+        {
+         "@name":"Your New Aesthetic"
+        },
+        {
+         "@name":"Hear You Me"
+        },
+        {
+         "@name":"If You Don't, Don't"
+        },
+        {
+         "@name":"Big Casino"
+        },
+        {
+         "@name":"My Best Theory"
+        },
+        {
+         "@name":"Pass the Baby"
+        },
+        {
+         "@name":"Polaris"
+        },
+        {
+         "@name":"Just Tonight..."
+        },
+        {
+         "@name":"Blister"
+        },
+        {
+         "@name":"It Matters"
+        },
+        {
+         "@name":"For Me This Is Heaven"
+        },
+        {
+         "@name":"Always Be"
+        },
+        {
+         "@name":"You Are Free"
+        },
+        {
+         "@name":"A Praise Chorus"
+        },
+        {
+         "@name":"The Authority Song"
+        },
+        {
+         "@name":"23"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Pain"
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "song":[
+        {
+         "@name":"The Middle"
+        },
+        {
+         "@name":"Sure and Certain"
+        },
+        {
+         "@name":"Sweetness"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/sherman-theater-stroudsburg-pa-5be797a8.html"
+   },
+   {
+    "@eventDate":"11-05-2017",
+    "@id":"be7a1e6",
+    "@lastUpdated":"2017-05-12T14:13:01.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"135ae541",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"3bd554e8",
+     "@name":"Aura",
+     "city":{
+      "@id":"4975802",
+      "@name":"Portland",
+      "@state":"Maine",
+      "@stateCode":"ME",
+      "coords":{
+       "@lat":"43.661471",
+       "@long":"-70.2553259"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/aura-portland-me-usa-3bd554e8.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "song":[
+        {
+         "@name":"You with Me"
+        },
+        {
+         "@name":"Bleed American"
+        },
+        {
+         "@name":"I Will Steal You Back"
+        },
+        {
+         "@name":"Get Right"
+        },
+        {
+         "@name":"Lucky Denver Mint"
+        },
+        {
+         "@name":"Hear You Me"
+        },
+        {
+         "@name":"If You Don't, Don't"
+        },
+        {
+         "@name":"Big Casino"
+        },
+        {
+         "@name":"My Best Theory"
+        },
+        {
+         "@name":"Pass the Baby"
+        },
+        {
+         "@name":"Just Tonight..."
+        },
+        {
+         "@name":"Blister"
+        },
+        {
+         "@name":"It Matters"
+        },
+        {
+         "@name":"For Me This Is Heaven"
+        },
+        {
+         "@name":"Always Be"
+        },
+        {
+         "@name":"You Are Free"
+        },
+        {
+         "@name":"A Praise Chorus"
+        },
+        {
+         "@name":"The Authority Song"
+        },
+        {
+         "@name":"Let It Happen"
+        },
+        {
+         "@name":"23"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Pain"
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "song":[
+        {
+         "@name":"The Middle"
+        },
+        {
+         "@name":"Sure and Certain"
+        },
+        {
+         "@name":"Sweetness"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/aura-portland-me-be7a1e6.html"
+   },
+   {
+    "@eventDate":"10-05-2017",
+    "@id":"33e7a879",
+    "@lastUpdated":"2017-05-11T06:20:13.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"35af91f",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"4bd76f9e",
+     "@name":"Algonquin College Commons Theatre",
+     "city":{
+      "@id":"6094817",
+      "@name":"Ottawa",
+      "@state":"Ontario",
+      "@stateCode":"ON",
+      "coords":{
+       "@lat":"45.4209405046496",
+       "@long":"-75.6902861595154"
+      },
+      "country":{
+       "@code":"CA",
+       "@name":"Canada"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/algonquin-college-commons-theatre-ottawa-on-canada-4bd76f9e.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "song":[
+        {
+         "@name":"You with Me"
+        },
+        {
+         "@name":"Bleed American"
+        },
+        {
+         "@name":"I Will Steal You Back"
+        },
+        {
+         "@name":"Lucky Denver Mint"
+        },
+        {
+         "@name":"Hear You Me"
+        },
+        {
+         "@name":"My Best Theory"
+        },
+        {
+         "@name":"It Matters"
+        },
+        {
+         "@name":"Big Casino"
+        },
+        {
+         "@name":"Pass the Baby"
+        },
+        {
+         "@name":"Just Tonight..."
+        },
+        {
+         "@name":"Let It Happen"
+        },
+        {
+         "@name":"You Are Free"
+        },
+        {
+         "@name":"If You Don't, Don't"
+        },
+        {
+         "@name":"Get Right"
+        },
+        {
+         "@name":"Blister"
+        },
+        {
+         "@name":"A Praise Chorus"
+        },
+        {
+         "@name":"The Authority Song"
+        },
+        {
+         "@name":"For Me This Is Heaven"
+        },
+        {
+         "@name":"23"
+        },
+        {
+         "@name":"Always Be"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Pain"
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "song":[
+        {
+         "@name":"The Middle"
+        },
+        {
+         "@name":"Sure and Certain"
+        },
+        {
+         "@name":"Sweetness"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/algonquin-college-commons-theatre-ottawa-on-canada-33e7a879.html"
+   },
+   {
+    "@eventDate":"09-05-2017",
+    "@id":"73e7b6e1",
+    "@lastUpdated":"2017-05-10T13:39:56.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"5b5a8b28",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"43d79f17",
+     "@name":"London Music Hall",
+     "city":{
+      "@id":"6058560",
+      "@name":"London",
+      "@state":"Ontario",
+      "@stateCode":"ON",
+      "coords":{
+       "@lat":"42.983389283",
+       "@long":"-81.233042387"
+      },
+      "country":{
+       "@code":"CA",
+       "@name":"Canada"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/london-music-hall-london-on-canada-43d79f17.html"
+    },
+    "sets":{
+     "set":{
+      "song":[
+       {
+        "@name":"You with Me"
+       },
+       {
+        "@name":"Bleed American"
+       },
+       {
+        "@name":"I Will Steal You Back"
+       },
+       {
+        "@name":"Get Right"
+       },
+       {
+        "@name":"Lucky Denver Mint"
+       },
+       {
+        "@name":"Hear You Me"
+       },
+       {
+        "@name":"My Best Theory"
+       },
+       {
+        "@name":"Big Casino"
+       },
+       {
+        "@name":"If You Don't, Don't"
+       },
+       {
+        "@name":"Pass the Baby"
+       },
+       {
+        "@name":"Just Tonight..."
+       },
+       {
+        "@name":"Blister"
+       },
+       {
+        "@name":"It Matters"
+       },
+       {
+        "@name":"For Me This Is Heaven"
+       },
+       {
+        "@name":"Always Be"
+       },
+       {
+        "@name":"You Are Free"
+       },
+       {
+        "@name":"A Praise Chorus"
+       },
+       {
+        "@name":"The Authority Song"
+       },
+       {
+        "@name":"Let It Happen"
+       },
+       {
+        "@name":"23"
+       },
+       {
+        "@name":"Work"
+       },
+       {
+        "@name":"Pain"
+       },
+       {
+        "@name":"The Middle"
+       },
+       {
+        "@name":"Sure and Certain"
+       },
+       {
+        "@name":"Sweetness"
+       }
+      ]
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/london-music-hall-london-on-canada-73e7b6e1.html"
+   },
+   {
+    "@eventDate":"07-05-2017",
+    "@id":"33e6408d",
+    "@lastUpdated":"2017-05-08T04:54:44.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"3b5ab498",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"43d50717",
+     "@name":"20 Monroe Live",
+     "city":{
+      "@id":"4994359",
+      "@name":"Grand Rapids",
+      "@state":"Michigan",
+      "@stateCode":"MI",
+      "coords":{
+       "@lat":"46.7657749",
+       "@long":"-89.2756983"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/20-monroe-live-grand-rapids-mi-usa-43d50717.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "song":[
+        {
+         "@name":"You with Me"
+        },
+        {
+         "@name":"Bleed American"
+        },
+        {
+         "@name":"I Will Steal You Back"
+        },
+        {
+         "@name":"Get Right"
+        },
+        {
+         "@name":"Lucky Denver Mint"
+        },
+        {
+         "@name":"Hear You Me"
+        },
+        {
+         "@name":"My Best Theory"
+        },
+        {
+         "@name":"Big Casino"
+        },
+        {
+         "@name":"If You Don't, Don't"
+        },
+        {
+         "@name":"Pass the Baby"
+        },
+        {
+         "@name":"Just Tonight..."
+        },
+        {
+         "@name":"Blister"
+        },
+        {
+         "@name":"It Matters"
+        },
+        {
+         "@name":"For Me This Is Heaven"
+        },
+        {
+         "@name":"Always Be"
+        },
+        {
+         "@name":"You Are Free"
+        },
+        {
+         "@name":"A Praise Chorus"
+        },
+        {
+         "@name":"The Authority Song"
+        },
+        {
+         "@name":"Let It Happen"
+        },
+        {
+         "@name":"23"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Pain"
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "song":[
+        {
+         "@name":"The Middle"
+        },
+        {
+         "@name":"Sure and Certain"
+        },
+        {
+         "@name":"Sweetness"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/20-monroe-live-grand-rapids-mi-33e6408d.html"
+   },
+   {
+    "@eventDate":"06-05-2017",
+    "@id":"3be64834",
+    "@lastUpdated":"2017-05-08T23:49:06.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"b5aa1ae",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"6bd63aee",
+     "@name":"The Canopy Club",
+     "city":{
+      "@id":"4914570",
+      "@name":"Urbana",
+      "@state":"Illinois",
+      "@stateCode":"IL",
+      "coords":{
+       "@lat":"40.1105875",
+       "@long":"-88.2072697"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/the-canopy-club-urbana-il-usa-6bd63aee.html"
+    },
+    "sets":{
+     "set":{
+      "song":[
+       {
+        "@name":"You with Me"
+       },
+       {
+        "@name":"Bleed American"
+       },
+       {
+        "@name":"I Will Steal You Back"
+       },
+       {
+        "@name":"Lucky Denver Mint"
+       },
+       {
+        "@name":"Get Right"
+       },
+       {
+        "@name":"Hear You Me"
+       },
+       {
+        "@name":"If You Don't, Don't"
+       },
+       {
+        "@name":"Big Casino"
+       },
+       {
+        "@name":"Pass the Baby"
+       },
+       {
+        "@name":"Just Tonight..."
+       },
+       {
+        "@name":"Blister"
+       },
+       {
+        "@name":"It Matters"
+       },
+       {
+        "@name":"For Me This Is Heaven"
+       },
+       {
+        "@name":"Always Be"
+       },
+       {
+        "@name":"You Are Free"
+       },
+       {
+        "@name":"A Praise Chorus"
+       },
+       {
+        "@name":"The Authority Song"
+       },
+       {
+        "@name":"Let It Happen"
+       },
+       {
+        "@name":"23"
+       },
+       {
+        "@name":"Work"
+       },
+       {
+        "@name":"Pain"
+       },
+       {
+        "@name":"The Middle"
+       },
+       {
+        "@name":"Sure and Certain"
+       },
+       {
+        "@name":"Sweetness"
+       }
+      ]
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/the-canopy-club-urbana-il-3be64834.html"
+   },
+   {
+    "@eventDate":"05-05-2017",
+    "@id":"33e65011",
+    "@lastUpdated":"2017-05-08T18:27:26.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"3b5aa490",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"13d675e5",
+     "@name":"Tom Lee Park",
+     "city":{
+      "@id":"4641239",
+      "@name":"Memphis",
+      "@state":"Tennessee",
+      "@stateCode":"TN",
+      "coords":{
+       "@lat":"35.1495343",
+       "@long":"-90.0489801"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/tom-lee-park-memphis-tn-usa-13d675e5.html"
+    },
+    "sets":{
+     "set":{
+      "song":[
+       {
+        "@name":"Bleed American"
+       },
+       {
+        "@name":"The Middle"
+       },
+       {
+        "@name":"Sweetness"
+       },
+       {
+        "@name":"The Authority Song"
+       },
+       {
+        "@name":"A Praise Chorus"
+       },
+       {
+        "@name":"Hear You Me"
+       }
+      ]
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/tom-lee-park-memphis-tn-33e65011.html"
+   },
+   {
+    "@eventDate":"04-05-2017",
+    "@id":"63e65a37",
+    "@lastUpdated":"2017-05-02T04:28:27.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"6b5d1a1e",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"4bd6c74e",
+     "@name":"Waterfront Park",
+     "city":{
+      "@id":"4299276",
+      "@name":"Louisville",
+      "@state":"Kentucky",
+      "@stateCode":"KY",
+      "coords":{
+       "@lat":"38.2542376",
+       "@long":"-85.759407"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/waterfront-park-louisville-ky-usa-4bd6c74e.html"
+    },
+    "sets":"",
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/waterfront-park-louisville-ky-63e65a37.html"
+   },
+   {
+    "@eventDate":"01-05-2017",
+    "@id":"43e66f47",
+    "@lastUpdated":"2017-05-03T15:32:44.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"6b5d0602",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"1bd63588",
+     "@name":"Garrick Centre",
+     "city":{
+      "@id":"6183235",
+      "@name":"Winnipeg",
+      "@state":"Manitoba",
+      "@stateCode":"MB",
+      "coords":{
+       "@lat":"49.884398624",
+       "@long":"-97.147044715"
+      },
+      "country":{
+       "@code":"CA",
+       "@name":"Canada"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/garrick-centre-winnipeg-mb-canada-1bd63588.html"
+    },
+    "sets":{
+     "set":{
+      "song":[
+       {
+        "@name":"You with Me"
+       },
+       {
+        "@name":"Bleed American"
+       },
+       {
+        "@name":"I Will Steal You Back"
+       },
+       {
+        "@name":"Get Right"
+       },
+       {
+        "@name":"Lucky Denver Mint"
+       },
+       {
+        "@name":"Hear You Me"
+       },
+       {
+        "@name":"If You Don't, Don't"
+       },
+       {
+        "@name":"Big Casino"
+       },
+       {
+        "@name":"Pass the Baby"
+       },
+       {
+        "@name":"Futures"
+       },
+       {
+        "@name":"Blister"
+       },
+       {
+        "@name":"It Matters"
+       },
+       {
+        "@name":"For Me This Is Heaven"
+       },
+       {
+        "@name":"Always Be"
+       },
+       {
+        "@name":"You Are Free"
+       },
+       {
+        "@name":"A Praise Chorus"
+       },
+       {
+        "@name":"The Authority Song"
+       },
+       {
+        "@name":"Let It Happen"
+       },
+       {
+        "@name":"23"
+       },
+       {
+        "@name":"Work"
+       },
+       {
+        "@name":"Pain"
+       },
+       {
+        "@name":"The Middle"
+       },
+       {
+        "@name":"Sure and Certain"
+       },
+       {
+        "@name":"Sweetness"
+       }
+      ]
+     }
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/garrick-centre-winnipeg-mb-canada-43e66f47.html"
+   },
+   {
+    "@eventDate":"30-04-2017",
+    "@id":"23e674a3",
+    "@lastUpdated":"2017-05-04T16:55:04.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"5b5d7768",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"63d4e6a3",
+     "@name":"O'Brian's Event Centre",
+     "city":{
+      "@id":"6141256",
+      "@name":"Saskatoon",
+      "@state":"Saskatchewan",
+      "@stateCode":"SK",
+      "coords":{
+       "@lat":"52.116786331",
+       "@long":"-106.634521548"
+      },
+      "country":{
+       "@code":"CA",
+       "@name":"Canada"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/obrians-event-centre-saskatoon-sk-canada-63d4e6a3.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "song":[
+        {
+         "@name":"You with Me"
+        },
+        {
+         "@name":"Bleed American"
+        },
+        {
+         "@name":"I Will Steal You Back"
+        },
+        {
+         "@name":"Get Right"
+        },
+        {
+         "@name":"Lucky Denver Mint"
+        },
+        {
+         "@name":"Hear You Me"
+        },
+        {
+         "@name":"If You Don't, Don't"
+        },
+        {
+         "@name":"Big Casino"
+        },
+        {
+         "@name":"You Are Free"
+        },
+        {
+         "@name":"Pass the Baby"
+        },
+        {
+         "@name":"Futures"
+        },
+        {
+         "@name":"Blister"
+        },
+        {
+         "@name":"It Matters"
+        },
+        {
+         "@name":"For Me This Is Heaven"
+        },
+        {
+         "@name":"Always Be"
+        },
+        {
+         "@name":"My Best Theory"
+        },
+        {
+         "@name":"A Praise Chorus"
+        },
+        {
+         "@name":"The Authority Song"
+        },
+        {
+         "@name":"Let It Happen"
+        },
+        {
+         "@name":"23"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Pain"
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "song":[
+        {
+         "@name":"The Middle"
+        },
+        {
+         "@name":"Sure and Certain"
+        },
+        {
+         "@name":"Sweetness"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/obrians-event-centre-saskatoon-sk-canada-23e674a3.html"
+   },
+   {
+    "@eventDate":"29-04-2017",
+    "@id":"33e67c8d",
+    "@lastUpdated":"2017-04-30T06:44:25.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"5b5dcb60",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"23d6d047",
+     "@name":"The Starlite Room",
+     "city":{
+      "@id":"5946768",
+      "@name":"Edmonton",
+      "@state":"Alberta",
+      "@stateCode":"AB",
+      "coords":{
+       "@lat":"53.550135939",
+       "@long":"-113.468712219"
+      },
+      "country":{
+       "@code":"CA",
+       "@name":"Canada"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/the-starlite-room-edmonton-ab-canada-23d6d047.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "song":[
+        {
+         "@name":"You with Me"
+        },
+        {
+         "@name":"Bleed American"
+        },
+        {
+         "@name":"I Will Steal You Back"
+        },
+        {
+         "@name":"Get Right"
+        },
+        {
+         "@name":"Lucky Denver Mint"
+        },
+        {
+         "@name":"Hear You Me"
+        },
+        {
+         "@name":"If You Don't, Don't"
+        },
+        {
+         "@name":"Big Casino"
+        },
+        {
+         "@name":"Pass the Baby"
+        },
+        {
+         "@name":"Futures"
+        },
+        {
+         "@name":"Polaris"
+        },
+        {
+         "@name":"Blister"
+        },
+        {
+         "@name":"For Me This Is Heaven"
+        },
+        {
+         "@name":"Always Be"
+        },
+        {
+         "@name":"You Are Free"
+        },
+        {
+         "@name":"A Praise Chorus"
+        },
+        {
+         "@name":"The Authority Song"
+        },
+        {
+         "@name":"My Best Theory"
+        },
+        {
+         "@name":"Through"
+        },
+        {
+         "@name":"23"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Pain"
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "song":[
+        {
+         "@name":"The Middle"
+        },
+        {
+         "@name":"Sure and Certain"
+        },
+        {
+         "@name":"Sweetness"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/the-starlite-room-edmonton-ab-canada-33e67c8d.html"
+   },
+   {
+    "@eventDate":"28-04-2017",
+    "@id":"2be6041e",
+    "@lastUpdated":"2017-04-30T08:55:03.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"7b5dca94",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"5bd773b4",
+     "@name":"Palace Theatre",
+     "city":{
+      "@id":"5913490",
+      "@name":"Calgary",
+      "@state":"Alberta",
+      "@stateCode":"AB",
+      "coords":{
+       "@lat":"51.050112282",
+       "@long":"-114.085285152"
+      },
+      "country":{
+       "@code":"CA",
+       "@name":"Canada"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/palace-theatre-calgary-ab-canada-5bd773b4.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "song":[
+        {
+         "@name":"You with Me"
+        },
+        {
+         "@name":"Bleed American"
+        },
+        {
+         "@name":"I Will Steal You Back"
+        },
+        {
+         "@name":"Get Right"
+        },
+        {
+         "@name":"Lucky Denver Mint"
+        },
+        {
+         "@name":"Hear You Me"
+        },
+        {
+         "@name":"If You Don't, Don't"
+        },
+        {
+         "@name":"Big Casino"
+        },
+        {
+         "@name":"Pass the Baby"
+        },
+        {
+         "@name":"Blister"
+        },
+        {
+         "@name":"It Matters"
+        },
+        {
+         "@name":"Ten"
+        },
+        {
+         "@name":"Always Be"
+        },
+        {
+         "@name":"You Are Free"
+        },
+        {
+         "@name":"A Praise Chorus"
+        },
+        {
+         "@name":"The Authority Song"
+        },
+        {
+         "@name":"My Best Theory"
+        },
+        {
+         "@name":"23"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Pain"
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "song":[
+        {
+         "@name":"The Middle"
+        },
+        {
+         "@name":"Sure and Certain"
+        },
+        {
+         "@name":"Sweetness"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/palace-theatre-calgary-ab-canada-2be6041e.html"
+   },
+   {
+    "@eventDate":"26-04-2017",
+    "@id":"63e6167f",
+    "@lastUpdated":"2017-04-24T03:31:48.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"735db65d",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"6bd6d2a2",
+     "@name":"Commodore Ballroom",
+     "city":{
+      "@id":"6173331",
+      "@name":"Vancouver",
+      "@state":"British Columbia",
+      "@stateCode":"BC",
+      "coords":{
+       "@lat":"49.249657393",
+       "@long":"-123.119340403"
+      },
+      "country":{
+       "@code":"CA",
+       "@name":"Canada"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/commodore-ballroom-vancouver-bc-canada-6bd6d2a2.html"
+    },
+    "sets":"",
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/commodore-ballroom-vancouver-bc-canada-63e6167f.html"
+   },
+   {
+    "@eventDate":"25-04-2017",
+    "@id":"7be61e9c",
+    "@lastUpdated":"2017-04-27T17:09:43.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"135dfdc1",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"2bd62c2e",
+     "@name":"Knitting Factory",
+     "city":{
+      "@id":"5811696",
+      "@name":"Spokane",
+      "@state":"Washington",
+      "@stateCode":"WA",
+      "coords":{
+       "@lat":"47.6587803",
+       "@long":"-117.4260466"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/knitting-factory-spokane-wa-usa-2bd62c2e.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "song":[
+        {
+         "@name":"You with Me"
+        },
+        {
+         "@name":"Bleed American"
+        },
+        {
+         "@name":"I Will Steal You Back"
+        },
+        {
+         "@name":"Get Right"
+        },
+        {
+         "@name":"Lucky Denver Mint"
+        },
+        {
+         "@name":"Hear You Me"
+        },
+        {
+         "@name":"If You Don't, Don't"
+        },
+        {
+         "@name":"Big Casino"
+        },
+        {
+         "@name":"Pass the Baby"
+        },
+        {
+         "@name":"Just Tonight..."
+        },
+        {
+         "@name":"Blister"
+        },
+        {
+         "@name":"It Matters"
+        },
+        {
+         "@name":"Ten"
+        },
+        {
+         "@name":"Always Be"
+        },
+        {
+         "@name":"You Are Free"
+        },
+        {
+         "@name":"A Praise Chorus"
+        },
+        {
+         "@name":"The Authority Song"
+        },
+        {
+         "@name":"My Best Theory"
+        },
+        {
+         "@name":"23"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Pain"
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "song":[
+        {
+         "@name":"The Middle"
+        },
+        {
+         "@name":"Sure and Certain"
+        },
+        {
+         "@name":"Sweetness"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/knitting-factory-spokane-wa-7be61e9c.html"
+   },
+   {
+    "@eventDate":"24-04-2017",
+    "@id":"7be62680",
+    "@lastUpdated":"2017-04-22T00:02:25.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"535c5b55",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"3bd6d400",
+     "@name":"Wilma Theatre",
+     "city":{
+      "@id":"5666639",
+      "@name":"Missoula",
+      "@state":"Montana",
+      "@stateCode":"MT",
+      "coords":{
+       "@lat":"46.872146",
+       "@long":"-113.9939982"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/wilma-theatre-missoula-mt-usa-3bd6d400.html"
+    },
+    "sets":"",
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/wilma-theatre-missoula-mt-7be62680.html"
+   },
+   {
+    "@eventDate":"22-04-2017",
+    "@id":"5be62bf0",
+    "@lastUpdated":"2017-04-23T07:35:14.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"35c41cb",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"63d7a257",
+     "@name":"Ace of Spades",
+     "city":{
+      "@id":"5389489",
+      "@name":"Sacramento",
+      "@state":"California",
+      "@stateCode":"CA",
+      "coords":{
+       "@lat":"38.5815719",
+       "@long":"-121.4943996"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/ace-of-spades-sacramento-ca-usa-63d7a257.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "song":[
+        {
+         "@name":"You with Me"
+        },
+        {
+         "@name":"Bleed American"
+        },
+        {
+         "@name":"I Will Steal You Back"
+        },
+        {
+         "@name":"Get Right"
+        },
+        {
+         "@name":"Hear You Me"
+        },
+        {
+         "@name":"If You Don't, Don't"
+        },
+        {
+         "@name":"Big Casino"
+        },
+        {
+         "@name":"Your New Aesthetic"
+        },
+        {
+         "@name":"Pass the Baby"
+        },
+        {
+         "@name":"Just Tonight..."
+        },
+        {
+         "@name":"Blister"
+        },
+        {
+         "@name":"Let It Happen"
+        },
+        {
+         "@name":"It Matters"
+        },
+        {
+         "@name":"For Me This Is Heaven"
+        },
+        {
+         "@name":"Always Be"
+        },
+        {
+         "@name":"You Are Free"
+        },
+        {
+         "@name":"A Praise Chorus"
+        },
+        {
+         "@name":"The Authority Song"
+        },
+        {
+         "@name":"My Best Theory"
+        },
+        {
+         "@name":"23"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Pain"
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "song":[
+        {
+         "@name":"The Middle"
+        },
+        {
+         "@name":"Sure and Certain"
+        },
+        {
+         "@name":"Sweetness"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/ace-of-spades-sacramento-ca-5be62bf0.html"
+   },
+   {
+    "@eventDate":"21-04-2017",
+    "@id":"43e62bf3",
+    "@lastUpdated":"2017-04-24T05:17:13.000+0000",
+    "@tour":"Integrity Blues",
+    "@versionId":"335db071",
+    "artist":{
+     "@disambiguation":"",
+     "@mbid":"bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+     "@name":"Jimmy Eat World",
+     "@sortName":"Jimmy Eat World",
+     "@tmid":"779154",
+     "url":"http:\/\/www.setlist.fm\/setlists\/jimmy-eat-world-5bd69b28.html"
+    },
+    "venue":{
+     "@id":"4bd7277a",
+     "@name":"House of Blues",
+     "city":{
+      "@id":"5506956",
+      "@name":"Las Vegas",
+      "@state":"Nevada",
+      "@stateCode":"NV",
+      "coords":{
+       "@lat":"36.1749705",
+       "@long":"-115.137223"
+      },
+      "country":{
+       "@code":"US",
+       "@name":"United States"
+      }
+     },
+     "url":"http:\/\/www.setlist.fm\/venue\/house-of-blues-las-vegas-nv-usa-4bd7277a.html"
+    },
+    "sets":{
+     "set":[
+      {
+       "song":[
+        {
+         "@name":"You with Me"
+        },
+        {
+         "@name":"Bleed American"
+        },
+        {
+         "@name":"I Will Steal You Back"
+        },
+        {
+         "@name":"Get Right"
+        },
+        {
+         "@name":"Hear You Me"
+        },
+        {
+         "@name":"If You Don't, Don't"
+        },
+        {
+         "@name":"Big Casino"
+        },
+        {
+         "@name":"Pass the Baby"
+        },
+        {
+         "@name":"Just Tonight..."
+        },
+        {
+         "@name":"Blister"
+        },
+        {
+         "@name":"It Matters"
+        },
+        {
+         "@name":"For Me This Is Heaven"
+        },
+        {
+         "@name":"Lucky Denver Mint"
+        },
+        {
+         "@name":"Always Be"
+        },
+        {
+         "@name":"You Are Free"
+        },
+        {
+         "@name":"A Praise Chorus"
+        },
+        {
+         "@name":"The Authority Song"
+        },
+        {
+         "@name":"My Best Theory"
+        },
+        {
+         "@name":"23"
+        },
+        {
+         "@name":"Work"
+        },
+        {
+         "@name":"Pain"
+        }
+       ]
+      },
+      {
+       "@encore":"1",
+       "song":[
+        {
+         "@name":"The Middle"
+        },
+        {
+         "@name":"Sure and Certain"
+        },
+        {
+         "@name":"Sweetness"
+        }
+       ]
+      }
+     ]
+    },
+    "url":"http:\/\/www.setlist.fm\/setlist\/jimmy-eat-world\/2017\/house-of-blues-las-vegas-nv-43e62bf3.html"
+   }
+  ]
+ }
+}
