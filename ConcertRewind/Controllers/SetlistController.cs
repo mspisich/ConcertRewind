@@ -32,7 +32,7 @@ namespace ConcertRewind.Controllers
 
 
         //Replace spaces with '+' for YouTube search queries
-        public string Replace(string info)
+        public static string Replace(string info)
         {
             string output = info.Replace(" ", "+");
 
@@ -105,8 +105,8 @@ namespace ConcertRewind.Controllers
 
             /*
             //Backup JSON if Setlist.fm is not working during demo! Type "Rihanna" at index.
-            //StreamReader rd = new StreamReader(@"C:\Users\Mike Spisich\Documents\Visual Studio 2015\Projects\ConcertRewind\ConcertRewind\setlistapibackup");
-            StreamReader rd = new StreamReader(@"C:\Users\Mike Spisich\Documents\Visual Studio 2015\Projects\ConcertRewind\ConcertRewind\jimmyeatworldjson");
+            StreamReader rd = new StreamReader(@"C:\Users\Mike Spisich\Documents\Visual Studio 2015\Projects\ConcertRewind\ConcertRewind\setlistapibackup");
+            //StreamReader rd = new StreamReader(@"C:\Users\Mike Spisich\Documents\Visual Studio 2015\Projects\ConcertRewind\ConcertRewind\jimmyeatworldjson");
             string ApiText = rd.ReadToEnd();
 
             //Converts that text into JSON
@@ -117,6 +117,59 @@ namespace ConcertRewind.Controllers
             return setlistApi;
         }
 
+        //Search youtube for song, return video ID of top result
+        public static string SearchYoutube(string artistName, string songName)
+        {
+            JObject youtubeApi;
+
+            List<string> videoIds = new List<string>();
+
+            string apiKey = "AIzaSyAfk5WMcg_rX2fZ-0mI9Id6aDXRaE_etcc";
+
+            //Search for and get YouTube video ID for each song played during concert
+            string searchTerm = Replace(artistName) + "+" + Replace(songName);
+
+            try
+            {
+                HttpWebRequest request =
+
+                //Load setlist json for chosen artist from setlist.fm API
+                WebRequest.CreateHttp("https://www.googleapis.com/youtube/v3/search?part=id&q=" + searchTerm + "&type=video&key=" + apiKey);
+
+                //Tells the user what browsers we're using
+                request.UserAgent = @"User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36";
+
+                //actually grabs the request
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+
+                //gets a stream of text
+                StreamReader rd = new StreamReader(response.GetResponseStream());
+
+                //reads to the end of file
+                string ApiText = rd.ReadToEnd();
+
+                //Converts that text into JSON
+                youtubeApi = JObject.Parse(ApiText);
+            }
+            catch (System.Net.WebException)
+            {
+                Console.WriteLine("Unable to communicate with YouTube API.");
+                youtubeApi = null;
+            }
+
+            string videoId = null;
+
+            try
+            {
+                videoId = youtubeApi["items"][0]["id"]["videoId"].ToString();
+            }
+            catch (NullReferenceException)
+            {
+                Console.WriteLine("Youtube search results unavailable for song \"" + songName + "\".");
+            }
+
+            return videoId;
+        }
 
         //Return Concert view for concert matching id on setlist.fm API
         public ActionResult Concert(string artistName, string concertId)
@@ -134,13 +187,27 @@ namespace ConcertRewind.Controllers
                     ViewBag.tour = c.tour;
                     ViewBag.songsPlayed = "";
 
+                    //Generate list of Youtube video IDs for playlist     
+                    ViewBag.videoIds = "";
+
+                    for(int i = 0; i < c.songsPlayed.Count; i++)
+                    {
+                        ViewBag.videoIds += SearchYoutube(artistName, c.songsPlayed[i]);
+
+                        //Don't add comma after last id
+                        if(i < (c.songsPlayed.Count - 1))
+                        {
+                            ViewBag.videoIds += ",";
+                        }
+                    }
+
                     foreach (string song in c.songsPlayed)
                     {
                         string artist = Replace(ViewBag.artist);
                         string songTwo = Replace(song);
                         string location = Replace(ViewBag.location);
 
-                        ViewBag.songsPlayed += "<li> <a href=https://www.youtube.com/results?search_query=" + songTwo + "+" + location + artist + " " + "target =_blank" + ">" + song + "</a> </li>";
+                        ViewBag.songsPlayed += "<li> <a href=https://www.youtube.com/results?search_query=" + songTwo + "+" + location + "+" + artist + " " + "target =_blank" + ">" + song + "</a> </li>";
                     }
                 }
             }
