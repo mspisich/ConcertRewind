@@ -75,7 +75,7 @@ namespace ConcertRewind.Controllers
                 //Converts that text into JSON
                 JObject setlistApi = JObject.Parse(ApiText);
             }
-            catch(Exception)
+            catch(System.Net.WebException)
             {
                 Console.WriteLine("Unable to communicate with Setlist.fm API.");
                 setlistApi = null;
@@ -92,7 +92,7 @@ namespace ConcertRewind.Controllers
             JObject setlistApi = JObject.Parse(ApiText);
             */
 
-        
+
             return setlistApi;
         }
 
