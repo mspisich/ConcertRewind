@@ -12,6 +12,7 @@ namespace ConcertRewind.Controllers
 {
     public class SetlistController : Controller
     {
+        //Setlist.fm JSON JObject to be shared by controller
         public static JObject setlistApi;
 
         //Replace spaces with '+' for YouTube search queries
