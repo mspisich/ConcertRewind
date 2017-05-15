@@ -53,7 +53,7 @@ namespace ConcertRewind.Controllers
         private static JObject GenerateSetlistApi(string artistName)
         {
             string apiKey = "d62d3a2f-a8c2-45a7-aa2e-405dc018fb62";
-            /*
+            
             try
             {
                 HttpWebRequest request =
@@ -80,10 +80,10 @@ namespace ConcertRewind.Controllers
             {
                 Console.WriteLine("Unable to communicate with Setlist.fm API.");
                 setlistApi = null;
-            }*/
+            }
 
 
-            
+            /*
             //Backup JSON if Setlist.fm is not working during demo! Type "Rihanna" at index.
             StreamReader rd = new StreamReader(@"C:\Users\Mike Spisich\Documents\Visual Studio 2015\Projects\ConcertRewind\ConcertRewind\setlistapibackup");
             //StreamReader rd = new StreamReader(@"C:\Users\Mike Spisich\Documents\Visual Studio 2015\Projects\ConcertRewind\ConcertRewind\jimmyeatworldjson");
@@ -91,7 +91,7 @@ namespace ConcertRewind.Controllers
 
             //Converts that text into JSON
             JObject setlistApi = JObject.Parse(ApiText);
-            
+            */
 
 
             return setlistApi;
