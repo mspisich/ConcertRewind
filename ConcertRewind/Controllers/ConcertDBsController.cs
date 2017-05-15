@@ -12,7 +12,7 @@ namespace ConcertRewind.Controllers
 {
     public class ConcertDBsController : Controller
     {
-        private ConcertDBEntities db = new ConcertDBEntities();
+        public ConcertDBEntities db = new ConcertDBEntities();
 
         // GET: ConcertDBs
         public ActionResult Index()

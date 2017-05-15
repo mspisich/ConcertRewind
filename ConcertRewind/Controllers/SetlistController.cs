@@ -7,6 +7,8 @@ using ConcertRewind.Models;
 using System.Net;
 using System.IO;
 using Newtonsoft.Json.Linq;
+using System.Data.Entity;
+using System.Data;
 
 namespace ConcertRewind.Controllers
 {
@@ -14,6 +16,20 @@ namespace ConcertRewind.Controllers
     {
         //Setlist.fm JSON JObject to be shared by controller
         public static JObject setlistApi;
+        public static ConcertDBEntities db = new ConcertDBEntities();
+
+        
+        public static void addtoDB(string artistname)
+        {
+            var concert = new ConcertDB();
+            concert.Artist_Name = artistname;
+            concert.Times_Searched = 1;
+            db.ConcertDBs.Add(concert);
+            db.SaveChanges();
+
+
+        }
+
 
         //Replace spaces with '+' for YouTube search queries
         public string Replace(string info)
@@ -28,12 +44,16 @@ namespace ConcertRewind.Controllers
             //Generate JObject for JSON from Setlist.fm API
             setlistApi = GenerateSetlistApi(artistName);
 
+            addtoDB(artistName);
+
             //Go to error view if Setlist API didn't load properly
-            if(setlistApi == null)
+            if (setlistApi == null)
             {
                 ViewBag.errorMessage = "There is no data available for this artist, or there was a problem connecting to the Setlist.fm server. Please try again.";
                 return View("error");
             }
+
+            
 
             //Generate list of concert objects
             List<concert> recentConcerts = GetConcerts(artistName);
