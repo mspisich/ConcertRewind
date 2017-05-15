@@ -1,13 +1,25 @@
 ﻿<!DOCTYPE html>
+@{
+    ViewBag.Error = "Error";
+}
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Error</title>
 </head>
-<body>
-    <hgroup>
-        <h1>Error.</h1>
-        <h2>An error occurred while processing your request.</h2>
-    </hgroup>
-</body>
+    <body>
+      <h1>ERROR</h1>
+        <p>
+            An error occurred while processing your request.  Please click the button to return to the Concert Rewind homepage
+            and make a different request.
+        </p>
+        <ul>
+            <li>
+                <form action="Home/Index.cshtml">
+                    <button type="submit" value="Go to Homepage" />
+                </form>
+            </li>
+        </ul>
+   </body>
 </html>
