@@ -1,7 +1,4 @@
 ﻿<!DOCTYPE html>
-@{
-    ViewBag.Error = "Error";
-}
 
 <html>
 <head>
@@ -11,15 +8,13 @@
     <body>
       <h1>ERROR</h1>
         <p>
-            An error occurred while processing your request.  Please click the button to return to the Concert Rewind homepage
-            and make a different request.
+            @ViewBag.errorMessage
         </p>
-        <ul>
-            <li>
-                <form action="Home/Index.cshtml">
-                    <button type="submit" value="Go to Homepage" />
-                </form>
-            </li>
-        </ul>
+        <div>
+            <form action="/Home/Index" method="get">
+                <input type="submit" value="Go to Homepage" />
+            </form>
+        </div>
+        
    </body>
 </html>
