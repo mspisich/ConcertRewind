@@ -77,3 +77,7 @@ _[Ss]cripts
 *.nupkg
 *.ncrunchsolution
 *.dot[Cc]over
+######################
+# APIKeys class file #
+######################
+APIKeys.cs
