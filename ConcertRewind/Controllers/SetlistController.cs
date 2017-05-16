@@ -104,10 +104,8 @@ namespace ConcertRewind.Controllers
         //Generate Setlist API JSON JObject
         private static JObject GenerateSetlistApi(string artistName)
         {
-            string apiKey = "d62d3a2f-a8c2-45a7-aa2e-405dc018fb62";
+            string apiKey = APIKeys.setlistApiKey;
             
-            try
-            {
                 HttpWebRequest request =
 
                 //Load setlist json for chosen artist from setlist.fm API
@@ -127,12 +125,8 @@ namespace ConcertRewind.Controllers
 
                 //Converts that text into JSON
                 JObject setlistApi = JObject.Parse(ApiText);
-            }
-            catch(System.Net.WebException)
-            {
-                Console.WriteLine("Unable to communicate with Setlist.fm API.");
-                setlistApi = null;
-            }
+
+
 
 
             /*
@@ -156,7 +150,7 @@ namespace ConcertRewind.Controllers
 
             List<string> videoIds = new List<string>();
 
-            string apiKey = "AIzaSyAfk5WMcg_rX2fZ-0mI9Id6aDXRaE_etcc";
+            string apiKey = APIKeys.youtubeApiKey;
 
             //Search for and get YouTube video ID for each song played during concert
             string searchTerm = Replace(artistName) + "+" + Replace(songName);
