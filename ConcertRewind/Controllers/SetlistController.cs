@@ -9,6 +9,9 @@ using System.IO;
 using Newtonsoft.Json.Linq;
 using System.Data.Entity;
 using System.Data;
+using System.Data.SqlClient;
+using System.Xml;
+
 
 namespace ConcertRewind.Controllers
 {
@@ -17,15 +20,43 @@ namespace ConcertRewind.Controllers
         //Setlist.fm JSON JObject to be shared by controller
         public static JObject setlistApi;
         public static ConcertDBEntities db = new ConcertDBEntities();
-
         
+
         public static void addtoDB(string artistname)
         {
-            var concert = new ConcertDB();
-            concert.Artist_Name = artistname;
-            concert.Times_Searched = 1;
-            db.ConcertDBs.Add(concert);
-            db.SaveChanges();
+            artistname = artistname.ToLower();
+            
+            if (db.ConcertDBs.Any(u => u.Artist_Name == artistname))
+            {
+                var query =
+               from u in db.ConcertDBs
+               where u.Artist_Name == artistname
+               select u;
+                List < ConcertDB > List = new List<ConcertDB>();
+                List = query.ToList();
+
+               foreach (var u in List)
+                {
+                    u.Times_Searched = u.Times_Searched + 1;
+                    db.SaveChanges();
+                }
+
+
+
+            }
+            else
+            {
+                var concert = new ConcertDB();
+                concert.Artist_Name = artistname;
+                concert.Times_Searched = 1;
+                db.ConcertDBs.Add(concert);
+                db.SaveChanges();
+
+
+
+            }
+
+
 
 
         }
@@ -42,10 +73,11 @@ namespace ConcertRewind.Controllers
         public ActionResult Results(string artistName)
         {
             //Generate JObject for JSON from Setlist.fm API
+            bool test;
             setlistApi = GenerateSetlistApi(artistName);
 
             addtoDB(artistName);
-
+            
             //Go to error view if Setlist API didn't load properly
             if (setlistApi == null)
             {
