@@ -73,7 +73,7 @@ namespace ConcertRewind.Controllers
         public ActionResult Results(string artistName)
         {
             //Generate JObject for JSON from Setlist.fm API
-            bool test;
+           
             setlistApi = GenerateSetlistApi(artistName);
 
             addtoDB(artistName);
