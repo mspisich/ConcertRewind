@@ -209,6 +209,8 @@ namespace ConcertRewind.Controllers
 
                         ViewBag.songsPlayed += "<li> <a href=https://www.youtube.com/results?search_query=" + songTwo + "+" + location + "+" + artist + " " + "target =_blank" + ">" + song + "</a> </li>";
                     }
+                    //End loop once matching concert is found
+                    break;
                 }
             }
             return View();
