@@ -216,25 +216,35 @@ namespace ConcertRewind.Controllers
                     //Generate list of Youtube video IDs for playlist     
                     ViewBag.videoIds = "";
 
-                    for(int i = 0; i < c.songsPlayed.Count; i++)
+                    //Only search for video IDs on YouTube if there is song data for current concert
+                    if(c.songsPlayed.Count() > 0)
                     {
-                        ViewBag.videoIds += SearchYoutube(artistName, c.songsPlayed[i]);
-
-                        //Don't add comma after last id
-                        if(i < (c.songsPlayed.Count - 1))
+                        for (int i = 0; i < c.songsPlayed.Count; i++)
                         {
-                            ViewBag.videoIds += ",";
+                            string currentId = SearchYoutube(artistName, c.songsPlayed[i]);
+                            //Only add video IDs that were found. If null is returned from search, song will be skipped.
+                            if(currentId != null)
+                            {
+                                ViewBag.videoIds += currentId;
+
+                                //Don't add comma after last id
+                                if (i < (c.songsPlayed.Count - 1))
+                                {
+                                    ViewBag.videoIds += ",";
+                                }
+                            } 
+                        }
+
+                        foreach (string song in c.songsPlayed)
+                        {
+                            string artist = Replace(ViewBag.artist);
+                            string songTwo = Replace(song);
+                            string location = Replace(ViewBag.location);
+
+                            ViewBag.songsPlayed += "<li> <a href=https://www.youtube.com/results?search_query=" + songTwo + "+" + location + "+" + artist + " " + "target =_blank" + ">" + song + "</a> </li>";
                         }
                     }
-
-                    foreach (string song in c.songsPlayed)
-                    {
-                        string artist = Replace(ViewBag.artist);
-                        string songTwo = Replace(song);
-                        string location = Replace(ViewBag.location);
-
-                        ViewBag.songsPlayed += "<li> <a href=https://www.youtube.com/results?search_query=" + songTwo + "+" + location + "+" + artist + " " + "target =_blank" + ">" + song + "</a> </li>";
-                    }
+                    
                     //End loop once matching concert is found
                     break;
                 }
