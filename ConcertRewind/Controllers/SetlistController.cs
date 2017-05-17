@@ -73,7 +73,6 @@ namespace ConcertRewind.Controllers
         public ActionResult Results(string artistName)
         {
             //Generate JObject for JSON from Setlist.fm API
-            bool test;
             setlistApi = GenerateSetlistApi(artistName);
 
             addtoDB(artistName);
@@ -106,8 +105,6 @@ namespace ConcertRewind.Controllers
         {
             string apiKey = "d62d3a2f-a8c2-45a7-aa2e-405dc018fb62";
             
-            try
-            {
                 HttpWebRequest request =
 
                 //Load setlist json for chosen artist from setlist.fm API
@@ -127,12 +124,8 @@ namespace ConcertRewind.Controllers
 
                 //Converts that text into JSON
                 JObject setlistApi = JObject.Parse(ApiText);
-            }
-            catch(System.Net.WebException)
-            {
-                Console.WriteLine("Unable to communicate with Setlist.fm API.");
-                setlistApi = null;
-            }
+            
+            
 
 
             /*
