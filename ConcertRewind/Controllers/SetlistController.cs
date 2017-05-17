@@ -19,6 +19,8 @@ namespace ConcertRewind.Controllers
     {
         //Setlist.fm JSON JObject to be shared by controller
         public static JObject setlistApi;
+
+        //Build SQL database object for previous searches
         public static ConcertDBEntities db = new ConcertDBEntities();
         
 
@@ -84,8 +86,6 @@ namespace ConcertRewind.Controllers
                 return View("error");
             }
 
-            
-
             //Generate list of concert objects
             List<concert> recentConcerts = GetConcerts(artistName);
 
@@ -103,29 +103,27 @@ namespace ConcertRewind.Controllers
         //Generate Setlist API JSON JObject
         private static JObject GenerateSetlistApi(string artistName)
         {
-            string apiKey = "d62d3a2f-a8c2-45a7-aa2e-405dc018fb62";
+            string apiKey = APIKeys.setlistApiKey;
             
-                HttpWebRequest request =
+            HttpWebRequest request =
 
-                //Load setlist json for chosen artist from setlist.fm API
-                WebRequest.CreateHttp("http://api.setlist.fm/rest/0.1/search/setlists.json?artistName=" + artistName + "&?key=" + apiKey);
+            //Load setlist json for chosen artist from setlist.fm API
+            WebRequest.CreateHttp("http://api.setlist.fm/rest/0.1/search/setlists.json?artistName=" + artistName + "&?key=" + apiKey);
 
-                //Tells the user what browsers we're using
-                request.UserAgent = @"User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36";
+            //Tells the user what browsers we're using
+            request.UserAgent = @"User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36";
 
-                //actually grabs the request
-                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            //actually grabs the request
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
-                //gets a stream of text
-                StreamReader rd = new StreamReader(response.GetResponseStream());
+            //gets a stream of text
+            StreamReader rd = new StreamReader(response.GetResponseStream());
 
-                //reads to the end of file
-                string ApiText = rd.ReadToEnd();
+            //reads to the end of file
+            string ApiText = rd.ReadToEnd();
 
-                //Converts that text into JSON
-                JObject setlistApi = JObject.Parse(ApiText);
-            
-            
+            //Converts that text into JSON
+            JObject setlistApi = JObject.Parse(ApiText);
 
 
             /*
@@ -149,7 +147,7 @@ namespace ConcertRewind.Controllers
 
             List<string> videoIds = new List<string>();
 
-            string apiKey = "AIzaSyAfk5WMcg_rX2fZ-0mI9Id6aDXRaE_etcc";
+            string apiKey = APIKeys.youtubeApiKey;
 
             //Search for and get YouTube video ID for each song played during concert
             string searchTerm = Replace(artistName) + "+" + Replace(songName);
@@ -215,25 +213,37 @@ namespace ConcertRewind.Controllers
                     //Generate list of Youtube video IDs for playlist     
                     ViewBag.videoIds = "";
 
-                    for(int i = 0; i < c.songsPlayed.Count; i++)
+                    //Only search for video IDs on YouTube if there is song data for current concert
+                    if(c.songsPlayed.Count() > 0)
                     {
-                        ViewBag.videoIds += SearchYoutube(artistName, c.songsPlayed[i]);
-
-                        //Don't add comma after last id
-                        if(i < (c.songsPlayed.Count - 1))
+                        for (int i = 0; i < c.songsPlayed.Count; i++)
                         {
-                            ViewBag.videoIds += ",";
+                            string currentId = SearchYoutube(artistName, c.songsPlayed[i]);
+                            //Only add video IDs that were found. If null is returned from search, song will be skipped.
+                            if(currentId != null)
+                            {
+                                ViewBag.videoIds += currentId;
+
+                                //Don't add comma after last id
+                                if (i < (c.songsPlayed.Count - 1))
+                                {
+                                    ViewBag.videoIds += ",";
+                                }
+                            } 
+                        }
+
+                        foreach (string song in c.songsPlayed)
+                        {
+                            string artist = Replace(ViewBag.artist);
+                            string songTwo = Replace(song);
+                            string location = Replace(ViewBag.location);
+
+                            ViewBag.songsPlayed += "<li> <a href=https://www.youtube.com/results?search_query=" + songTwo + "+" + location + "+" + artist + " " + "target =_blank" + ">" + song + "</a> </li>";
                         }
                     }
-
-                    foreach (string song in c.songsPlayed)
-                    {
-                        string artist = Replace(ViewBag.artist);
-                        string songTwo = Replace(song);
-                        string location = Replace(ViewBag.location);
-
-                        ViewBag.songsPlayed += "<li> <a href=https://www.youtube.com/results?search_query=" + songTwo + "+" + location + "+" + artist + " " + "target =_blank" + ">" + song + "</a> </li>";
-                    }
+                    
+                    //End loop once matching concert is found
+                    break;
                 }
             }
             return View();
@@ -252,35 +262,52 @@ namespace ConcertRewind.Controllers
             catch (Exception)
             {
                 Console.WriteLine("There is no concert info available for this artist.");
-                return null;
             }
 
             if (totalConcerts == 0)
             {
-
+                return null;
             }
             else if(totalConcerts < 10)
             {
                 for(int i = 0; i < totalConcerts; i++)
                 {
-                    recentConcerts.Add(GetSetList(artistName, i));
+                    concert c = GetSetList(artistName, i);
+                    if(c != null)
+                    {
+                        recentConcerts.Add(c);
+                    }
                 }
             }
             else
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    recentConcerts.Add(GetSetList(artistName, i));
+                    concert c = GetSetList(artistName, i);
+                    if (c != null)
+                    {
+                        recentConcerts.Add(c);
+                    }
                 }
             }
 
-            return recentConcerts;
+            //Check if list of concerts was populated. Return null if not.
+            if (recentConcerts.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                return recentConcerts;
+            }
         }
 
         //Generate concert object
         public static concert GetSetList(string artistName, int concertIndex)
         {
             //Get info (date, location, etc.) of concert
+
+            //Concert must have artist name data to continue!
             string artist;
             try
             {
@@ -288,13 +315,16 @@ namespace ConcertRewind.Controllers
             }
             catch (System.NullReferenceException)
             {
-                artist = artistName;
+                Console.WriteLine("No artist info available for this concert.");
+                return null;
             }
 
-            string date = null;
+            DateTime? date = null;
             try
             {
-                date = setlistApi["setlists"]["setlist"][concertIndex]["@eventDate"].ToString();
+                date = DateTime.Parse(setlistApi["setlists"]["setlist"][concertIndex]["@eventDate"].ToString());
+                //Format date
+                date.Value.ToString("MM/dd/YYYY");
             }
             catch (System.NullReferenceException)
             {
@@ -349,7 +379,18 @@ namespace ConcertRewind.Controllers
                 Console.WriteLine("No tour info available for this concert.");
             }
 
-            string id = setlistApi["setlists"]["setlist"][concertIndex]["@id"].ToString();
+            //Concert must have an id to continue!!!
+            string id;
+            try
+            {
+                id = setlistApi["setlists"]["setlist"][concertIndex]["@id"].ToString();
+            }
+            catch (NullReferenceException)
+            {
+                Console.WriteLine("No ID assigned to this concert.");
+                return null;
+            }
+            
 
             List<string> songsPlayed = new List<string>();
 
