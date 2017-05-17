@@ -326,7 +326,7 @@ namespace ConcertRewind.Controllers
                 //Format date
                 date.Value.ToString("MM/dd/YYYY");
             }
-            catch (System.NullReferenceException)
+            catch (Exception)
             {
                 Console.WriteLine("No date info available for this concert.");
             }
