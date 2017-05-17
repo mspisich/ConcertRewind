@@ -106,25 +106,25 @@ namespace ConcertRewind.Controllers
         {
             string apiKey = APIKeys.setlistApiKey;
             
-                HttpWebRequest request =
+            HttpWebRequest request =
 
-                //Load setlist json for chosen artist from setlist.fm API
-                WebRequest.CreateHttp("http://api.setlist.fm/rest/0.1/search/setlists.json?artistName=" + artistName + "&?key=" + apiKey);
+            //Load setlist json for chosen artist from setlist.fm API
+            WebRequest.CreateHttp("http://api.setlist.fm/rest/0.1/search/setlists.json?artistName=" + artistName + "&?key=" + apiKey);
 
-                //Tells the user what browsers we're using
-                request.UserAgent = @"User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36";
+            //Tells the user what browsers we're using
+            request.UserAgent = @"User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36";
 
-                //actually grabs the request
-                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            //actually grabs the request
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
-                //gets a stream of text
-                StreamReader rd = new StreamReader(response.GetResponseStream());
+            //gets a stream of text
+            StreamReader rd = new StreamReader(response.GetResponseStream());
 
-                //reads to the end of file
-                string ApiText = rd.ReadToEnd();
+            //reads to the end of file
+            string ApiText = rd.ReadToEnd();
 
-                //Converts that text into JSON
-                JObject setlistApi = JObject.Parse(ApiText);
+            //Converts that text into JSON
+            JObject setlistApi = JObject.Parse(ApiText);
 
 
 
@@ -216,25 +216,35 @@ namespace ConcertRewind.Controllers
                     //Generate list of Youtube video IDs for playlist     
                     ViewBag.videoIds = "";
 
-                    for(int i = 0; i < c.songsPlayed.Count; i++)
+                    //Only search for video IDs on YouTube if there is song data for current concert
+                    if(c.songsPlayed.Count() > 0)
                     {
-                        ViewBag.videoIds += SearchYoutube(artistName, c.songsPlayed[i]);
-
-                        //Don't add comma after last id
-                        if(i < (c.songsPlayed.Count - 1))
+                        for (int i = 0; i < c.songsPlayed.Count; i++)
                         {
-                            ViewBag.videoIds += ",";
+                            string currentId = SearchYoutube(artistName, c.songsPlayed[i]);
+                            //Only add video IDs that were found. If null is returned from search, song will be skipped.
+                            if(currentId != null)
+                            {
+                                ViewBag.videoIds += currentId;
+
+                                //Don't add comma after last id
+                                if (i < (c.songsPlayed.Count - 1))
+                                {
+                                    ViewBag.videoIds += ",";
+                                }
+                            } 
+                        }
+
+                        foreach (string song in c.songsPlayed)
+                        {
+                            string artist = Replace(ViewBag.artist);
+                            string songTwo = Replace(song);
+                            string location = Replace(ViewBag.location);
+
+                            ViewBag.songsPlayed += "<li> <a href=https://www.youtube.com/results?search_query=" + songTwo + "+" + location + "+" + artist + " " + "target =_blank" + ">" + song + "</a> </li>";
                         }
                     }
-
-                    foreach (string song in c.songsPlayed)
-                    {
-                        string artist = Replace(ViewBag.artist);
-                        string songTwo = Replace(song);
-                        string location = Replace(ViewBag.location);
-
-                        ViewBag.songsPlayed += "<li> <a href=https://www.youtube.com/results?search_query=" + songTwo + "+" + location + "+" + artist + " " + "target =_blank" + ">" + song + "</a> </li>";
-                    }
+                    
                     //End loop once matching concert is found
                     break;
                 }
