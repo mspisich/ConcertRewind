@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using ConcertRewind.Models;
+using System.Globalization;
 
 namespace ConcertRewind.Controllers
 {
@@ -17,7 +18,10 @@ namespace ConcertRewind.Controllers
         // GET: ConcertDBs
         public ActionResult Index()
         {
-            return View(db.ConcertDBs.ToList());
+            List<ConcertDB> SortedList = db.ConcertDBs.ToList();
+            SortedList = SortedList.OrderByDescending(o => o.Times_Searched).Take(10).ToList();
+            
+            return View(SortedList);
         }
 
         // GET: ConcertDBs/Details/5

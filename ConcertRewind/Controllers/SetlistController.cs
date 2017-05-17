@@ -19,6 +19,8 @@ namespace ConcertRewind.Controllers
     {
         //Setlist.fm JSON JObject to be shared by controller
         public static JObject setlistApi;
+
+        //Build SQL database object for previous searches
         public static ConcertDBEntities db = new ConcertDBEntities();
         
 
@@ -73,7 +75,6 @@ namespace ConcertRewind.Controllers
         public ActionResult Results(string artistName)
         {
             //Generate JObject for JSON from Setlist.fm API
-           
             setlistApi = GenerateSetlistApi(artistName);
 
             addtoDB(artistName);
@@ -84,8 +85,6 @@ namespace ConcertRewind.Controllers
                 ViewBag.errorMessage = "There is no data available for this artist, or there was a problem connecting to the Setlist.fm server. Please try again.";
                 return View("error");
             }
-
-            
 
             //Generate list of concert objects
             List<concert> recentConcerts = GetConcerts(artistName);
@@ -125,8 +124,6 @@ namespace ConcertRewind.Controllers
 
             //Converts that text into JSON
             JObject setlistApi = JObject.Parse(ApiText);
-
-
 
 
             /*
@@ -265,35 +262,52 @@ namespace ConcertRewind.Controllers
             catch (Exception)
             {
                 Console.WriteLine("There is no concert info available for this artist.");
-                return null;
             }
 
             if (totalConcerts == 0)
             {
-
+                return null;
             }
             else if(totalConcerts < 10)
             {
                 for(int i = 0; i < totalConcerts; i++)
                 {
-                    recentConcerts.Add(GetSetList(artistName, i));
+                    concert c = GetSetList(artistName, i);
+                    if(c != null)
+                    {
+                        recentConcerts.Add(c);
+                    }
                 }
             }
             else
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    recentConcerts.Add(GetSetList(artistName, i));
+                    concert c = GetSetList(artistName, i);
+                    if (c != null)
+                    {
+                        recentConcerts.Add(c);
+                    }
                 }
             }
 
-            return recentConcerts;
+            //Check if list of concerts was populated. Return null if not.
+            if (recentConcerts.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                return recentConcerts;
+            }
         }
 
         //Generate concert object
         public static concert GetSetList(string artistName, int concertIndex)
         {
             //Get info (date, location, etc.) of concert
+
+            //Concert must have artist name data to continue!
             string artist;
             try
             {
@@ -301,13 +315,16 @@ namespace ConcertRewind.Controllers
             }
             catch (System.NullReferenceException)
             {
-                artist = artistName;
+                Console.WriteLine("No artist info available for this concert.");
+                return null;
             }
 
-            string date = null;
+            DateTime? date = null;
             try
             {
-                date = setlistApi["setlists"]["setlist"][concertIndex]["@eventDate"].ToString();
+                date = DateTime.Parse(setlistApi["setlists"]["setlist"][concertIndex]["@eventDate"].ToString());
+                //Format date
+                date.Value.ToString("MM/dd/YYYY");
             }
             catch (System.NullReferenceException)
             {
@@ -362,7 +379,18 @@ namespace ConcertRewind.Controllers
                 Console.WriteLine("No tour info available for this concert.");
             }
 
-            string id = setlistApi["setlists"]["setlist"][concertIndex]["@id"].ToString();
+            //Concert must have an id to continue!!!
+            string id;
+            try
+            {
+                id = setlistApi["setlists"]["setlist"][concertIndex]["@id"].ToString();
+            }
+            catch (NullReferenceException)
+            {
+                Console.WriteLine("No ID assigned to this concert.");
+                return null;
+            }
+            
 
             List<string> songsPlayed = new List<string>();
 
