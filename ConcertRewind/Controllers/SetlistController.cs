@@ -13,6 +13,7 @@ using System.Data.SqlClient;
 using System.Xml;
 
 
+
 namespace ConcertRewind.Controllers
 {
     public class SetlistController : Controller
@@ -78,6 +79,7 @@ namespace ConcertRewind.Controllers
             setlistApi = GenerateSetlistApi(artistName);
 
             addtoDB(artistName);
+            ViewBag.artist = artistName;
             
             //Go to error view if Setlist API didn't load properly
             if (setlistApi == null)
@@ -199,7 +201,7 @@ namespace ConcertRewind.Controllers
         {
             //Generate list of concert objects
             List<concert> recentConcerts = GetConcerts(artistName);
-            
+            ViewBag.artist = artistName;
             foreach(concert c in recentConcerts)
             {
                 if(c.id == concertId)

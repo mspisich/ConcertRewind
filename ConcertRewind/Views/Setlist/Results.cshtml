@@ -1,28 +1,64 @@
-﻿@model IEnumerable<ConcertRewind.Models.concert>
+﻿<style type="text/css">
+h1{
+    Color: black;
+        font-family: Tahoma;
+        text-align: center;
+
+
+} 
+
+body{
+
+   display: inline-block;     
+    margin-left: auto;
+    margin-right: auto;
+
+}
+ul{
+    text-align:center;
+    font-size: 14pt;
+    font-family: Tahoma;
+    list-style-type: none;
+    border-bottom: .5px solid black;
+
+
+
+}
+
+
+
+
+</style>
+
+
+
+
+@model IEnumerable<ConcertRewind.Models.concert>
 
 @{
     ViewBag.Title = "Results";
+    string artist = ViewBag.Artist;
+    artist = artist.ToUpper();
 }
 
-<h1>Results</h1>
-<p>
-    Your first stop on Concert Rewind's rockin' musical journey provides the locations of performances by your selected artist.
-    <br />Just choose a location and click the link to experience a play list of bold songs from that concert.
-</p>
+
+    <body>
+        <img src="~/Content/02-crowd-yellow.jpg" height="200" width="320" />
+        <img src="~/Content/10-music-listeners-w-phone.jpg" height="200" width="320" />
+        <img src="~/Content/04-crowd-phones-red.jpg" height="200" width="320" />
+    </body>
+<h1>Recent @artist Concerts</h1>
 <br />
-<div>
-    <img src="~/Content/02-crowd-yellow.jpg" height="200" width="320"/>  
-    <img src="~/Content/10-music-listeners-w-phone.jpg" height="200" width="320" />
-    <img src="~/Content/04-crowd-phones-red.jpg" height="200" width="320" />
-</div>
+
     <br />
     <br />
     <ul>
         @foreach (var concert in Model)
         {
             string concertInfo = concert.city + ", " + concert.state + ": " + concert.date;
+            
 
             //<li>@concertInfo <a href="Concert?artistName=@concert.artist,concertId=@concert.id">Go to concert</a> </li> // @Html.ActionLink("Go to Concert", "Concert", new { }, new { id = concert.id })</li>
-            <li>@concertInfo @Html.ActionLink("Go to Concert", "Concert", new { artistName = concert.artist, concertId = concert.id })</li>
+            <li>@concertInfo <br /> @Html.ActionLink("Go to Concert", "Concert", new { artistName = concert.artist, concertId = concert.id })</li>
         }
     </ul>
