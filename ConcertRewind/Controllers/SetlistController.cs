@@ -23,44 +23,36 @@ namespace ConcertRewind.Controllers
         //Build SQL database object for previous searches
         public static ConcertDBEntities db = new ConcertDBEntities();
         
-
+        //Update SQL database of artist searches
         public static void addtoDB(string artistname)
         {
             artistname = artistname.ToLower();
             
+            //Check if artist has already been searched before, iterate times searched by one
             if (db.ConcertDBs.Any(u => u.Artist_Name == artistname))
             {
                 var query =
-               from u in db.ConcertDBs
-               where u.Artist_Name == artistname
-               select u;
+                from u in db.ConcertDBs
+                where u.Artist_Name == artistname
+                select u;
                 List < ConcertDB > List = new List<ConcertDB>();
                 List = query.ToList();
 
-               foreach (var u in List)
+                foreach (var u in List)
                 {
                     u.Times_Searched = u.Times_Searched + 1;
                     db.SaveChanges();
                 }
-
-
-
             }
             else
             {
+                //Add new artist name to database
                 var concert = new ConcertDB();
                 concert.Artist_Name = artistname;
                 concert.Times_Searched = 1;
                 db.ConcertDBs.Add(concert);
                 db.SaveChanges();
-
-
-
             }
-
-
-
-
         }
 
 
@@ -77,6 +69,7 @@ namespace ConcertRewind.Controllers
             //Generate JObject for JSON from Setlist.fm API
             setlistApi = GenerateSetlistApi(artistName);
 
+            //Update SQL database of artist searches
             addtoDB(artistName);
             
             //Go to error view if Setlist API didn't load properly
@@ -104,7 +97,7 @@ namespace ConcertRewind.Controllers
         private static JObject GenerateSetlistApi(string artistName)
         {
             string apiKey = APIKeys.setlistApiKey;
-            
+
             HttpWebRequest request =
 
             //Load setlist json for chosen artist from setlist.fm API
@@ -113,8 +106,22 @@ namespace ConcertRewind.Controllers
             //Tells the user what browsers we're using
             request.UserAgent = @"User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36";
 
-            //actually grabs the request
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            HttpWebResponse response = null;
+            try
+            {
+                response = (HttpWebResponse)request.GetResponse();
+            }
+            catch(WebException e)
+            {
+                //404 Error. Server is down or artist does not exist.
+                if (((HttpWebResponse)(e.Response)).StatusCode == HttpStatusCode.NotFound)
+                {
+                    Console.WriteLine("There was a problem communicating with the Setlist.fm API, or no data for this artist exists.");
+                    return null;
+                }
+
+                throw;
+            }
 
             //gets a stream of text
             StreamReader rd = new StreamReader(response.GetResponseStream());
