@@ -7,26 +7,27 @@ h1{
 
 } 
 
-body{
 
-   display: inline-block;     
-    margin-left: auto;
-    margin-right: auto;
-
-}
 ul{
     text-align:center;
     font-size: 14pt;
     font-family: Tahoma;
     list-style-type: none;
     border-bottom: .5px solid black;
+}
+#images{
 
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+.test{
 
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
-
-
-
 
 </style>
 
@@ -42,11 +43,11 @@ ul{
 }
 
 
-    <body>
-        <img src="~/Content/02-crowd-yellow.jpg" height="200" width="320" />
-        <img src="~/Content/10-music-listeners-w-phone.jpg" height="200" width="320" />
-        <img src="~/Content/04-crowd-phones-red.jpg" height="200" width="320" />
-    </body>
+    <div id="images">
+        <img class="test" src="~/Content/02-crowd-yellow.jpg" height="200" width="320" />
+        <img class="test" src="~/Content/10-music-listeners-w-phone.jpg" height="200" width="320" />
+        <img class="test" src="~/Content/04-crowd-phones-red.jpg" height="200" width="320" />   
+    </div>
 <h1>Recent @artist Concerts</h1>
 <br />
 

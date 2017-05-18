@@ -1,22 +1,60 @@
 ﻿@model IEnumerable<ConcertRewind.Models.ConcertDB>
 <style>
+#images{
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
     
+ 
+}
+p{
+    text-align: center;
+    font-size: 12pt;
+}
+.test {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius:7px;
+        overflow:hidden;
+    }
+input[type=text] {
+    width: 900px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 200%;
+}
+
+#search{
+    position: center;
 
 
+}
 
 </style>
 <div>
     <h1>CONCERT REWIND</h1>
     <p>
-        Welcome to Concert Rewind.  With this app, you'll be able to search for an artist and view their most recent concert locations.
-        And from the locations page, you'll be able to link to a specific concert by an artist and, from there,
-        you can access and listen to individual songs performed at the concert.  ENJOY THE JOURNEY!
+        Your one stop to preparing and reliving concerts from all your favorite artists. 
     </p>
     <br />
-
-    <img src="~/Content/01-band-red.jpg" height="200" width="320"/>
-    <img src="~/Content/07-singer-microphone-color-bg.jpg" height="200" width="320"/>
-    <img src="~/Content/05-crowd-fireworks-blue.jpg" height="200" width="320"/>
+    <div id="images"> 
+    <img class="test" src="~/Content/01-band-red.jpg" height="200" width="320"/>
+    <img class="test" src="~/Content/07-singer-microphone-color-bg.jpg" height="200" width="320"/>
+    <img class="test" src="~/Content/05-crowd-fireworks-blue.jpg" height="200" width="320"/>
+    </div>
 </div>
 
 <br />
@@ -28,17 +66,17 @@
 <!--Form action will point to the GetSetList name in the HomeController.  There will be no URL here in the Form action; in
     the HomeController, we will point the input name here; and here the form action will point to the Method name in the HomeController
     that Mike is working on. -->
-<div class="center">
-    <form action="/Setlist/Results" method="get">
-        <input type="text" name="artistName" required />
-        <input type="submit" value="Search!" />
+<div id="search ">
+    <form class="center" action="/Setlist/Results" method="get">
+        <input type="text" name="artistName" placeholder="Search..." required />
+       
     </form>
+    
 </div>
 <br />
-<div>
-
-    <img src="~/Content/08-color-white-dancers-illustration.jpg" height="200" width="320" />
-    <img src="~/Content/09-saxaphone-player-setting-sun.jpg" height="200" width="320"/>
-    <img src="~/Content/03-jazz-singer-blue.jpg" height="200" width="320"/>
+<div id="images">
+    <img class="test" src="~/Content/08-color-white-dancers-illustration.jpg" height="200" width="320" />
+    <img class="test" src="~/Content/09-saxaphone-player-setting-sun.jpg" height="200" width="320"/>
+    <img class="test" src="~/Content/03-jazz-singer-blue.jpg" height="200" width="320"/>
 </div>
 
