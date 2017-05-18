@@ -1,39 +1,105 @@
-﻿
+﻿<style type="text/css">
+    #wrap {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #left_col {
+        float: left;
+        
+        
+    }
+
+    #right_col {
+        float: right;
+        width: 60%;
+    }
+
+    li{
+        color: black;
+        font-size: 13pt;
+        font-family: Tahoma;
+
+
+    }
+    h1{
+        Color: black;
+        font-family: Tahoma;
+        text-align:center;
+
+
+    }
+    h2{
+        font-family: Tahoma;
+        text-align: center;
+        font-size: 11pt;
+
+
+    }
+    h3{
+       font-family: Tahoma;
+       text-align: center;
+       font-size: 10pt; 
+
+    }
+</style>
+
+
+
+
+
+
+
+
 @{
-    ViewBag.Title = "Concert";
+    string artist = @ViewBag.artist;
+    artist = artist.ToUpper();
+
 }
 
-<h1>Concert</h1>
 
-<p>
-    Concert Rewind now provides a cool playlist of songs from the concert you've selected.<br />
-    This is where the listening and serious fun begin.  ENJOY!
-</p>
+
+
+
+
 <div>
-    <img src="~/Content/09-saxaphone-player-setting-sun.jpg" height="200" width="320" />
-    <img src="~/Content/06-middle-age-crowd-tattoo.jpg" height="200" width="320" />
-    <img src="~/Content/10-music-listeners-w-phone.jpg" height="200" width="320"/>
+
 </div>
 
-<h2>@ViewBag.artist</h2>
+<h1>@artist</h1>
 <h2>@ViewBag.date</h2>
-<h2>@ViewBag.location</h2>
+<h3>@ViewBag.location</h3>
+<br />
+<br />
 
-@{
-    if (ViewBag.songsPlayed.Equals(""))
-    {
-        <ul><li>There is no song info available for this concert.</li></ul>
-    }
-    else
-    {
-        <ol>@Html.Raw(ViewBag.songsPlayed)</ol>
-    }
-}
+<div id="wrap">
+    <div id="left_col">
+        
+            @{
+                if (ViewBag.songsPlayed.Equals(""))
+                {
+                    <ul><li>There is no song info available for this concert.</li></ul>
+                }
+                else
+                {
+                    <ol>@Html.Raw(ViewBag.songsPlayed)</ol>
+                }
+            }
+      </div>
+</div>
 
-@{
+
+
+
+<div id="right_col">
+            
+        @{
     <!--Only generate YouTube player if relevant videos have been found-->
-    if (ViewBag.videoIds != "")
-    {
-        <iframe width="720" height="405" src="https://www.youtube.com/embed/VIDEO_ID?playlist=@ViewBag.videoIds" frameborder="0" allowfullscreen />
-    }
-}
+            if (ViewBag.videoIds != "")
+            {
+                <iframe width="680" height="380" src="https://www.youtube.com/embed/VIDEO_ID?playlist=@ViewBag.videoIds" frameborder="0" allowfullscreen />
+            }
+        }
+        
+</div>
+
