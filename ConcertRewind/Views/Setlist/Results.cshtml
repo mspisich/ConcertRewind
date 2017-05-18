@@ -56,12 +56,21 @@ ul{
     <br />
     <br />
     <ul>
-        @foreach (var concert in Model)
-        {
-            string concertInfo = concert.city + ", " + concert.state + ": " + concert.date;
-            
+    @foreach (var concert in Model)
+    {
+        string concertInfo = concert.city + ", " + concert.state + ": ";
 
-            //<li>@concertInfo <a href="Concert?artistName=@concert.artist,concertId=@concert.id">Go to concert</a> </li> // @Html.ActionLink("Go to Concert", "Concert", new { }, new { id = concert.id })</li>
-            <li>@concertInfo <br /> @Html.ActionLink("Go to Concert", "Concert", new { artistName = concert.artist, concertId = concert.id })</li>
+        if (concert.date != null)
+        {
+            string date = concert.date.Value.ToString("MM/dd/yyyy");
+            concertInfo += date;
         }
-    </ul>
+        else
+        {
+            concertInfo += "*Date info unavailable*";
+        }
+
+        <li>@concertInfo <br /> @Html.ActionLink("Go to Concert", "Concert", new { artistName = concert.artist, concertId = concert.id })</li>
+    }
+</ul>
+
