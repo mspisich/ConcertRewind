@@ -208,16 +208,25 @@ namespace ConcertRewind.Controllers
         {
             //Generate list of concert objects
             List<concert> recentConcerts = GetConcerts(artistName);
+
+            //Go to error view if no concert data available
+            if (recentConcerts == null)
+            {
+                ViewBag.errorMessage = "There is no concert data available for artist \"" + artistName + "\".";
+                return View("error");
+            }
+
             ViewBag.artist = artistName;
             foreach(concert c in recentConcerts)
             {
-                if(c.id == concertId)
+                ViewBag.songsPlayed = "";
+
+                if (c.id == concertId)
                 {
                     ViewBag.artist = c.artist;
                     ViewBag.date = c.date;
                     ViewBag.location = c.city + ", " + c.state;
                     ViewBag.tour = c.tour;
-                    ViewBag.songsPlayed = "";
 
                     //Generate list of Youtube video IDs for playlist     
                     ViewBag.videoIds = "";
@@ -397,7 +406,7 @@ namespace ConcertRewind.Controllers
                 Console.WriteLine("No ID assigned to this concert.");
                 return null;
             }
-            
+
 
             List<string> songsPlayed = new List<string>();
 
