@@ -332,8 +332,6 @@ namespace ConcertRewind.Controllers
             try
             {
                 date = DateTime.Parse(setlistApi["setlists"]["setlist"][concertIndex]["@eventDate"].ToString());
-                //Format date
-                date.Value.ToString("MM/dd/YYYY");
             }
             catch (Exception)
             {
