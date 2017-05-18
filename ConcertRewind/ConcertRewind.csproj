@@ -277,16 +277,16 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Views\Home\01-band-red.jpg" />
-    <Content Include="Views\Home\02-crowd-yellow.jpg" />
-    <Content Include="Views\Home\03-jazz-singer-blue.jpg" />
-    <Content Include="Views\Home\04-crowd-phones-red.jpg" />
-    <Content Include="Views\Home\05-crowd-fireworks-blue.jpg" />
-    <Content Include="Views\Home\06-middle-age-crowd-tattoo.jpg" />
-    <Content Include="Views\Home\07-singer-microphone-color-bg.jpg" />
-    <Content Include="Views\Home\08-color-white-dancers-illustration.jpg" />
-    <Content Include="Views\Home\09-saxaphone-player-setting-sun.jpg" />
-    <Content Include="Views\Home\10-music-listeners-w-phone.jpg" />
+    <Content Include="Content\01-band-red.jpg" />
+    <Content Include="Content\02-crowd-yellow.jpg" />
+    <Content Include="Content\03-jazz-singer-blue.jpg" />
+    <Content Include="Content\04-crowd-phones-red.jpg" />
+    <Content Include="Content\05-crowd-fireworks-blue.jpg" />
+    <Content Include="Content\06-middle-age-crowd-tattoo.jpg" />
+    <Content Include="Content\07-singer-microphone-color-bg.jpg" />
+    <Content Include="Content\08-color-white-dancers-illustration.jpg" />
+    <Content Include="Content\09-saxaphone-player-setting-sun.jpg" />
+    <Content Include="Content\10-music-listeners-w-phone.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
