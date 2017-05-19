@@ -224,7 +224,7 @@ namespace ConcertRewind.Controllers
                 if (c.id == concertId)
                 {
                     ViewBag.artist = c.artist;
-                    ViewBag.date = c.date;
+                    ViewBag.date = c.date.Value.ToString("MM/dd/yyyy");
                     ViewBag.location = c.city + ", " + c.state;
                     ViewBag.tour = c.tour;
 
