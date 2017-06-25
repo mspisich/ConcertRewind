@@ -81,3 +81,7 @@ _[Ss]cripts
 # APIKeys class file #
 ######################
 APIKeys.cs
+#####################################
+# Database connection settings file #
+#####################################
+DBConnection.config

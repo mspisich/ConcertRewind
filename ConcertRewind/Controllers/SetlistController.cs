@@ -23,6 +23,7 @@ namespace ConcertRewind.Controllers
 
         //Build SQL database object for previous searches
         public static ConcertDBEntities db = new ConcertDBEntities();
+
         
         //Update SQL database of artist searches
         public static void addtoDB(string artistname)
