@@ -57,12 +57,22 @@ ul{
     <ul>
     @foreach (var concert in Model)
     {
-        string concertInfo = concert.city + ", " + concert.state + ": ";
+        string concertInfo = "";
+
+        //If concert is in US, show state. Otherwise, show country.
+        if (concert.country == "United States")
+        {
+            concertInfo = concert.city + ", " + concert.state + ": ";
+        }
+        else
+        {
+            concertInfo = concert.city + ", " + concert.country + ": ";
+        }
+
 
         if (concert.date != null)
         {
-            string date = concert.date.Value.ToString("MM/dd/yyyy");
-            concertInfo += date;
+            concertInfo += concert.date;
         }
         else
         {

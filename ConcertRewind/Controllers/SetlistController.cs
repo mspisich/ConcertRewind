@@ -11,8 +11,7 @@ using System.Data.Entity;
 using System.Data;
 using System.Data.SqlClient;
 using System.Xml;
-
-
+using System.Net.Http;
 
 namespace ConcertRewind.Controllers
 {
@@ -99,15 +98,49 @@ namespace ConcertRewind.Controllers
         //Generate Setlist API JSON JObject
         private static JObject GenerateSetlistApi(string artistName)
         {
-            string apiKey = APIKeys.setlistApiKey;
+
+            using (var client = new HttpClient())
+            {
+                string apiKey = APIKeys.setlistApiKey;
+                string url = "https://api.setlist.fm/rest/1.0/search/setlists?artistName=" + artistName;
+
+                //Headers for requesting JSON format and providing api key
+                client.DefaultRequestHeaders.Add("Accept", "application/json");
+                client.DefaultRequestHeaders.Add("x-api-key", apiKey);
+
+                HttpResponseMessage response = client.GetAsync(url).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    string json = response.Content.ReadAsStringAsync().Result;
+
+                    //Converts json into JObject
+                    JObject setlistApi = JObject.Parse(json);
+
+                    return setlistApi;
+                }
+                else
+                {
+                    Console.WriteLine("There was a problem communicating with the Setlist.fm API, or no data for this artist exists.");
+                    return null;
+                }
+            }
+
+
+
+
+            /*
 
             HttpWebRequest request =
 
             //Load setlist json for chosen artist from setlist.fm API
-            WebRequest.CreateHttp("http://api.setlist.fm/rest/0.1/search/setlists.json?artistName=" + artistName + "&?key=" + apiKey);
+            WebRequest.CreateHttp("https://api.setlist.fm/rest/1.0/search/setlists?artistName=" + artistName);
 
             //Tells the user what browsers we're using
             request.UserAgent = @"User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36";
+
+            //Request JSON format and give API key to server
+            request.Accept = "application/json";
+            request.Headers.Add("x-api-key", apiKey);
 
             HttpWebResponse response = null;
             try
@@ -135,19 +168,7 @@ namespace ConcertRewind.Controllers
             //Converts that text into JSON
             JObject setlistApi = JObject.Parse(ApiText);
 
-
-            /*
-            //Backup JSON if Setlist.fm is not working during demo! Type "Rihanna" at index.
-            StreamReader rd = new StreamReader(@"C:\Users\Mike Spisich\Documents\Visual Studio 2015\Projects\ConcertRewind\ConcertRewind\setlistapibackup");
-            //StreamReader rd = new StreamReader(@"C:\Users\Mike Spisich\Documents\Visual Studio 2015\Projects\ConcertRewind\ConcertRewind\jimmyeatworldjson");
-            string ApiText = rd.ReadToEnd();
-
-            //Converts that text into JSON
-            JObject setlistApi = JObject.Parse(ApiText);
-            */
-
-
-            return setlistApi;
+            return setlistApi;*/
         }
 
         //Search youtube for song, return video ID of top result
@@ -225,7 +246,7 @@ namespace ConcertRewind.Controllers
                 if (c.id == concertId)
                 {
                     ViewBag.artist = c.artist;
-                    ViewBag.date = c.date.Value.ToString("MM/dd/yyyy");
+                    ViewBag.date = c.date;
                     ViewBag.location = c.city + ", " + c.state;
                     ViewBag.tour = c.tour;
 
@@ -276,11 +297,12 @@ namespace ConcertRewind.Controllers
             int totalConcerts = 0;
             try
             {
-                totalConcerts = setlistApi["setlists"]["setlist"].Count();
+                totalConcerts = setlistApi["setlist"].Count();
             }
             catch (Exception)
             {
                 Console.WriteLine("There is no concert info available for this artist.");
+                return null;
             }
 
             if (totalConcerts == 0)
@@ -330,7 +352,7 @@ namespace ConcertRewind.Controllers
             string artist;
             try
             {
-                artist = setlistApi["setlists"]["setlist"][concertIndex]["artist"]["@name"].ToString();
+                artist = setlistApi["setlist"][concertIndex]["artist"]["name"].ToString();
             }
             catch (System.NullReferenceException)
             {
@@ -338,10 +360,10 @@ namespace ConcertRewind.Controllers
                 return null;
             }
 
-            DateTime? date = null;
+            string date = null;
             try
             {
-                date = DateTime.Parse(setlistApi["setlists"]["setlist"][concertIndex]["@eventDate"].ToString());
+                date = setlistApi["setlist"][concertIndex]["eventDate"].ToString();
             }
             catch (Exception)
             {
@@ -351,7 +373,7 @@ namespace ConcertRewind.Controllers
             string city = null;
             try
             {
-                city = setlistApi["setlists"]["setlist"][concertIndex]["venue"]["city"]["@name"].ToString();
+                city = setlistApi["setlist"][concertIndex]["venue"]["city"]["name"].ToString();
             }
             catch (System.NullReferenceException)
             {
@@ -362,24 +384,27 @@ namespace ConcertRewind.Controllers
             string state = null;
             try
             {
-                state = setlistApi["setlists"]["setlist"][concertIndex]["venue"]["city"]["@state"].ToString();
+                state = setlistApi["setlist"][concertIndex]["venue"]["city"]["state"].ToString();
             }
             catch (System.NullReferenceException)
             {
-                try
-                {
-                    state = setlistApi["setlists"]["setlist"][concertIndex]["venue"]["city"]["country"]["@name"].ToString();
-                }
-                catch (System.NullReferenceException)
-                {
-                    Console.WriteLine("No state/country info available for this concert.");
-                }
+                Console.WriteLine("No state info available for this concert.");
+            }
+
+            string country = null;
+            try
+            {
+                country = setlistApi["setlist"][concertIndex]["venue"]["city"]["country"]["name"].ToString();
+            }
+            catch (System.NullReferenceException)
+            {
+                Console.WriteLine("No country info available for this concert.");
             }
 
             string venue = null;
             try
             {
-                venue = setlistApi["setlists"]["setlist"][concertIndex]["venue"]["@name"].ToString();
+                venue = setlistApi["setlist"][concertIndex]["venue"]["name"].ToString();
             }
             catch (System.NullReferenceException)
             {
@@ -389,7 +414,7 @@ namespace ConcertRewind.Controllers
             string tour = null;
             try
             {
-                tour = setlistApi["setlists"]["setlist"][concertIndex]["@tour"].ToString();
+                tour = setlistApi["setlist"][concertIndex]["tour"]["name"].ToString();
             }
             catch (System.NullReferenceException)
             {
@@ -400,7 +425,7 @@ namespace ConcertRewind.Controllers
             string id;
             try
             {
-                id = setlistApi["setlists"]["setlist"][concertIndex]["@id"].ToString();
+                id = setlistApi["setlist"][concertIndex]["id"].ToString();
             }
             catch (NullReferenceException)
             {
@@ -414,7 +439,7 @@ namespace ConcertRewind.Controllers
             int totalSets = 0;
             try
             {
-                totalSets = setlistApi["setlists"]["setlist"][concertIndex]["sets"]["set"].Count();
+                totalSets = setlistApi["setlist"][concertIndex]["sets"]["set"].Count();
             }
             catch (Exception)
             {
@@ -423,32 +448,18 @@ namespace ConcertRewind.Controllers
 
             //Check through each set from concert
 
-            //Case of only one set at concert
-            if (totalSets == 1)
+            for (int setIndex = 0; setIndex < setlistApi["setlist"][concertIndex]["sets"]["set"].Count(); setIndex++)
             {
                 //Check through each song from set
-                for (int songIndex = 0; songIndex < setlistApi["setlists"]["setlist"][concertIndex]["sets"]["set"]["song"].Count(); songIndex++)
+                for (int songIndex = 0; songIndex < setlistApi["setlist"][concertIndex]["sets"]["set"][setIndex]["song"].Count(); songIndex++)
                 {
                     //Add song to list
-                    songsPlayed.Add((setlistApi["setlists"]["setlist"][concertIndex]["sets"]["set"]["song"][songIndex]["@name"]).ToString());
-                }
-            }
-            //Case of multiple sets at concert
-            else if (totalSets > 1)
-            {
-                for (int setIndex = 0; setIndex < setlistApi["setlists"]["setlist"][concertIndex]["sets"]["set"].Count(); setIndex++)
-                {
-                    //Check through each song from set
-                    for (int songIndex = 0; songIndex < setlistApi["setlists"]["setlist"][concertIndex]["sets"]["set"][setIndex]["song"].Count(); songIndex++)
-                    {
-                        //Add song to list
-                        songsPlayed.Add((setlistApi["setlists"]["setlist"][concertIndex]["sets"]["set"][setIndex]["song"][songIndex]["@name"]).ToString());
-                    }
+                    songsPlayed.Add((setlistApi["setlist"][concertIndex]["sets"]["set"][setIndex]["song"][songIndex]["name"]).ToString());
                 }
             }
 
             //Build and return concert object
-            concert concert = new Models.concert(artistName, date, city, state, venue, tour, songsPlayed, id);
+            concert concert = new Models.concert(artist, date, city, state, country, venue, tour, songsPlayed, id);
 
             return concert;
         }
